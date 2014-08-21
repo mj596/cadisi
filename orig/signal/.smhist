@@ -1,0 +1,157 @@
+macro read sishape.sm
+print gapdsignal1.dat '%g %g\n' {xgn ygn}
+set xgna = xgn-95
+print gapdsignal1.dat '%g %g\n' {xgna ygn}
+set xgu = xg-95
+print gapdsignal2.dat '%g %g\n' {xgu yg}
+macro read sishape.sm
+print gapdsignal2.dat '%g %g\n' {xgu yg}
+macro read sishape.sm
+print gapdsignal2.dat '%g %g\n' {xgu yg}
+set xgu = xg-95
+print gapdsignal2.dat '%g %g\n' {xgu yg}
+macro read sishape.sm
+set xgu = xg-95
+print gapdsignal3.dat '%g %g\n' {xgu yg}
+print gapdsignal3.dat '%g %g %g\n' {xgu yg yg}
+macro read sishape.sm
+set xgu = xg-95
+print gapdsignal2.dat '%g %g %g\n' {xgu yg yg}
+print gapdsignal1.dat '%g %g %g\n' {xgna ygn ygn}
+macro read sishape.sm
+define dgsum (SUM(dg)
+define dgsum (SUM(dg))
+write standard $dgsum
+macro read sishape.sm
+define ygsum (SUM(yg))
+write standard $ygsum
+define dgsum (SUM(dg))
+write standard $dgsum
+define dgsum (SUM(ABS(dg)))
+write standard $dgsum
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+help set
+macro read sishape.sm
+print '%g\n' {dpi}
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+pp\
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+macro read sishape.smp
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit
+macro read sishape.sm
+quit

@@ -1,0 +1,29 @@
+10           ncer: Cherenkov photon number (p.e.)
+0            ipor: Poisson randomization of mean Cherenkov photon number
+900.0        time0: Mean arrival time of Cherenkov photons (ns)
+0            itim : Flag for ramdomization of arrival time of Cherenkov photons
+5.0          deltime: Time spread of Cherenkov photons, box distribution (ns)
+0.5          tjitter: Time jitter for photon detector
+0            ipha: Random phase flag
+4.0          tsam:  ADC sampling period (ns)
+0            ispe: Flag for SPE
+16.4345      onepe: (28.418 - 250 MHz) (14.312 - 1 GHz) PMT amplitude corresponding to 1 photoelectron
+0.001         onepa: (17.2917 - S10985, 250 MHz) Amplifier amplitude corresponding to 1 photoelectron, used only for electronic noise
+0.15         wfac:  White noise fraction factor (Cracow 0.15 mV for 1 mV one p.e. amplitude)
+0.0          wnom:  White noise mean amplitude
+200.0          nsbrate: NSB rate MHz
+0.0          tenrate: Thermal noise of GAPD, 0.6 MHz
+0.45         defa: (0.9 - S10985, 250 MHz) Derivative added to the averaged signal with factor defa
+19.95        signorm: (19.7789 - S10985, 250 MHz) Single photon signal normalization: detector pulse integral/derivative pulse integral
+15.486       refeped: reference deconvolved signal amplitude to convert into p.e. units
+12.206       refepes: reference shaped signal amplitude to convert into p.e. units
+0.0          tstart: Start time of computed period (ns)
+2000.0       tstop: Stop time of computed period (ns)
+0.1          dt: Coarse time bin (ns)
+0.05         dti: Fine time bin (ns)
+0.01         dtfine: Finest time bin (ns)
+350.0        bi1: Background integration lower limit, below pulse
+850.0        bo1
+1400.0       bi2
+1900.0       bo2
+1            ipr: Printing flag

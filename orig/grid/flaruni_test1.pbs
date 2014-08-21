@@ -1,0 +1,5 @@
+#!/bin/tcsh
+#PBS -l walltime=168:00:00,nodes=1,mem=1500MB,vmem=1500MB
+#PBS -q pub7d
+cd /work/1/lubinski/ctanew/signal/test1
+./flaszka.pl 100000

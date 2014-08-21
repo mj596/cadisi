@@ -1,0 +1,3774 @@
+pur      dev postportfile gapdrun.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 650 1450 50 100 -10 250 10 50
+         sph cherenkov.photons black
+         sph nsb.photons magenta
+         sph thermal.photons forest
+       #  phs detector.signals blue
+       #  rdis fp37_signal.dat black
+         rdis detector.pulse red
+         fah fadc.samples blue
+         #fah fadc.sampled cyan
+        # rdis fadc.s12516c50.aver cyan
+         #rdis fadc.daver oran
+        # rdis fadc.s12516c50.deco torquoise
+        # rdis fadc.s12516c50.shaped forest
+        # lweight 3
+        # rdis detector.s12516c100.pulse forest
+        # rdis fadc.s12516c100.aver green
+        # rdis fadc.s12516c100.deco torquoise
+        # rdis fadc.s12516c100.shaped forest
+        # lweight 5
+        # rdis detector.s10985c50.pulse red
+        # rdis fadc.s10985c50.aver orange
+        # rdis fadc.s10985c50.deco torquoise
+         rdis fadc.deco torquoise
+        # rdis fadc.s10985c50.shaped forest
+        # lweight 1.5
+         relocate 800 19.8
+         ltype 2
+         draw 1300 19.8
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+       #  putlabel 4 signal
+         relocate (29000 29600)
+         ctype red
+         putlabel 4 S10985-050C input
+         relocate (29000 29000)
+         ctype orange
+         putlabel 4 S10985-050C ADC averaged
+         relocate (29000 28100)
+         ctype blue
+         putlabel 4 S12516-050C input
+         relocate (29000 27500)
+         ctype cyan
+         putlabel 4 S12516-050C ADC averaged
+         relocate (29000 26600)
+         ctype forest
+         putlabel 4 S12516-100C input
+         relocate (29000 26000)
+         ctype green
+         putlabel 4 S12516-100C ADC averaged
+         relocate (29000 26600)
+         ctype black
+       #  putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+       #  putlabel 4 averaged derivative
+        # putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 Amplitude (ADC counts)
+         angle 0
+         ctype black
+         dev X11
+
+pug      dev postportfile gapdpulses.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 880 1180 20 100 -10 150 10 50
+        # sph cherenkov.photons black
+        # sph nsb.photons red
+        # sph thermal.photons forest
+       #  phs detector.signals blue
+       #  rdis fp37_signal.dat black
+         rdis detector.s12516c50.pulse blue
+         #fah fadc.samples blue
+         #fah fadc.sampled cyan
+         rdis fadc.s12516c50.aver cyan
+         #rdis fadc.daver oran
+        # rdis fadc.s12516c50.deco torquoise
+        # rdis fadc.s12516c50.shaped forest
+        # lweight 3
+         rdis detector.s12516c100.pulse forest
+         rdis fadc.s12516c100.aver green
+        # rdis fadc.s12516c100.deco torquoise
+        # rdis fadc.s12516c100.shaped forest
+        # lweight 5
+         rdis detector.s10985c50.pulse red
+         rdis fadc.s10985c50.aver orange
+        # rdis fadc.s10985c50.deco torquoise
+        # rdis fadc.s10985c50.shaped forest
+        # lweight 1.5
+         relocate 800 0
+         ltype 2
+         draw 1300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+       #  putlabel 4 signal
+         relocate (29000 29600)
+         ctype red
+         putlabel 4 S10985-050C input
+         relocate (29000 29000)
+         ctype orange
+         putlabel 4 S10985-050C ADC averaged
+         relocate (29000 28100)
+         ctype blue
+         putlabel 4 S12516-050C input
+         relocate (29000 27500)
+         ctype cyan
+         putlabel 4 S12516-050C ADC averaged
+         relocate (29000 26600)
+         ctype forest
+         putlabel 4 S12516-100C input
+         relocate (29000 26000)
+         ctype green
+         putlabel 4 S12516-100C ADC averaged
+         relocate (29000 26600)
+         ctype black
+       #  putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+       #  putlabel 4 averaged derivative
+        # putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 Amplitude (ADC counts)
+         angle 0
+         ctype black
+         dev X11
+
+pac      dev postportfile fladical10.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+       #  bo1 0 300 20 100 -0.05 1.1 0.1 0.2
+       #  madi gapd10985_250MHz_10pe_calonepa.dis 1 15 65 1.1 red 0
+       #  madi gapd10985_250MHz_10pe_calsignorm.dis 1 15 65 1.1 blue 0
+       #  madi gapd10985_250MHz_10pe_calonepabis.dis 1 15 65 1.1 orange 0
+       #  madi gapd10985_250MHz_10pe_calonepa_porand.dis 1 15 0 2.5 violet 0
+         bo1 0 30 2 10 -0.05 1.1 0.1 0.2
+       #  madi gapd10985_250MHz_10pe_calonepa.dis 1 6 0 0.25 red 0
+       #  madi gapd10985_250MHz_10pe_calsignorm.dis 1 6 0 0.25 blue 0
+       #  madi gapd10985_250MHz_10pe_calonepabis.dis 1 6 0 0.25 orange 0
+       ##  madi gapd10985_250MHz_10pe_calsignorma_porand.dis 1 6 0 0.25 black 0
+       #  madi gapd10985_250MHz_10pe_calonepa_porand.dis 1 6 0 0.25 violet 0
+       #  madi gapd10985_250MHz_10pe_caltest.dis 1 6 0 0.25 forest 0
+       #  rdis polo10b0.dat black
+         fahn poisson10.dat red 0.000008
+         relocate 0 0
+         draw 30 0
+       #  bo2 0 300 20 100 -0.05 1.1 0.1 0.2
+       #  madi gapd10985_250MHz_10pe_calonepa.dis 1 3 80 1.5 red 0
+       #  madi gapd10985_250MHz_10pe_calonepabis.dis 1 3 80 1.5 orange 0
+       #  madi gapd10985_250MHz_10pe_calonepa_porand.dis 1 3 0 3 violet 0
+       #  madi gapd10985_250MHz_10pe_calsignorm.dis 1 3 80 1.5 blue 0
+       #  madi gapd10985_250MHz_10pe_calsignorma.dis 1 3 80 1.5 magenta 0
+       #  madi gapd10985_250MHz_10pe_calsignorma_porand.dis 1 3 0 3 black 0
+       #  madi gapd10985_250MHz_8pe_calsignorm.dis 1 3 60 1.1 green 0
+       #  madi gapd10985_250MHz_12pe_calsignorm.dis 1 3 100 2.5 forest 0
+         bo2 0 30 2 10 -0.05 1.1 0.1 0.2
+         madi gapd10985_250MHz_10pe_caltest.dis 1 6 0 0.25 blue 0
+         madi gapd10985_250MHz_10pe_caltest.dis 1 7 0 0.25 cyan 0
+         madi gapd10985_250MHz_10pe_potest.dis 1 6 0 0.25 forest 0
+         madi gapd10985_250MHz_10pe_potest.dis 1 7 0 0.25 green 0
+       #  rdis polo10b0.dat black
+         fahn poisson10.dat red 0.000008
+         bo3 0 300 20 100 -0.05 1.1 0.1 0.2
+         madi gapd10985_250MHz_10pe_calonepe_porand.dis 1 15 0 2.5 blue 0
+         madi gapd10985_250MHz_10pe_calonepe.dis 1 15 0 2.5 red 0
+         madi gapd10985_250MHz_10pe_calsig_porand.dis 1 15 0 2.5 forest 0
+         madi gapd10985_250MHz_10pe_calsig.dis 1 15 0 2.5 orange 0
+         madi gapd10985_250MHz_10pe_phase.dis 1 15 0 2.5 black 0
+       # blo3 -1 41 2 10 -0.05 1.1 0.1 0.2
+        # rdis random.photons blue
+        # bro3 102 109 0.5 2 -0.05 1.1 0.1 0.2
+       #  mahi flaszka_gapd_250MHz_10pe_sys.dis 1 11 104.6 0.04 forest
+         ctype black
+         relocate 102.5 0
+         draw 110.5 0
+	 expand 0.75
+         relocate (29000 30000)
+         ctype red
+       #  putlabel 4 ADC phase
+       #  putlabel 4 GAPD SPE
+       #  putlabel 4 GAPD noise
+       #  putlabel 4 electronic noise
+       #  putlabel 4 photon arrival time
+       #  putlabel 4 NSB
+         ctype black
+       #  putlabel 4 All effects
+         ctype black
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+pul      dev postportfile flagapulses250.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+	 expand 0.85
+	 bo 80 140 5 10 -80 320 20 100
+         sph cherenkov.photons black
+        # sph nsb.photons red
+        # sph thermal.photons forest
+       #  phs detector.signals blue
+       #  rdis fp37_signal.dat black
+         rdis detector.pulse red
+       #  rdit detector.pulse.gapd12516 red 181
+         rdis detector.pulse.pmt250 red
+       #  rdis detector.pulse.pmt1000 red
+       #  rdis detector.pulse.ga250 red
+       #  rdis amplifier.pulse green
+       #  rdis amplifier.pulse.en0 black
+         rdis amplifier.pulse.pmt250 green
+       #  rdis amplifier.pulse.pmt1000 green
+       #  rdis amplifier.pulse.ga250 green
+       #  rdis flasim.test cyan
+       #  rdis fp37_input.dat black
+       #  fah fadc.samples blue
+         fah fadc.samples.pmt250 blue
+       #  fah fadc.samples.pmt1000 blue
+        # fah fadc.samples.ga250 blue
+        # fah fadc.samples.ph0d75 red
+        # fah fadc.samples.ph1d0 blue
+        # fah fadc.samples.ph1d25 forest
+        # fah fadc.samples.ph1d5 magenta
+        # fah fadc.samples.ph1d375 black
+        # rdis fp37_samples.dat black
+       #  rdis fadc.inter blue
+       #  rdis fadc.inter.pmt250 black
+       #  rdis fadc.inter.pmt1000 black
+       #  rdis2 fadc.inter black
+       #  rdis2 fadc.inter.ph0d75 red
+       #  rdis2 fadc.inter.ph0d75.herin.bias0d9 red
+       #  rdis2 fadc.inter.ph0d75.herin torquoise
+       #  rdis2 fadc.inter.ph1d0 blue
+       #  rdis2 fadc.inter.ph1d0.herin.bias0d9 blue 
+       #  rdis2 fadc.inter.ph1d25 forest
+       #  rdis2 fadc.inter.ph1d25.herin.bias0d9 forest
+       #  rdis2 fadc.inter.ph1d5 magenta
+       #  rdis2 fadc.inter.ph1d5.herin.bias0d9 magenta
+       #  rdis2 fadc.inter.ph1d5.porin violet
+       #  rdis2 fadc.inter.parin torquoise
+       #  rdis2 fadc.inter.herin orange
+       #  rdis2 fadc.inter.porin red
+       #  rdis2 fadc.inter.curin forest
+       #  rdis fadc.aver magenta
+       #  rdis fadc.aver.en0 blue
+         rdis fadc.aver.pmt250 magenta
+       #  rdis fadc.aver.pmt1000 magenta
+       #  rdis fadc.aver.ga250 magenta
+        # rdis2 fadc.aver black
+        # rdis fadc.aver.ph1d0 blue
+        # rdis fadc.aver.ph0d75 red
+        # rdis fadc.aver.ph1d25 forest
+        # rdis fadc.aver.ph1d5 magenta
+        # rdis fadc.aver.ph1d375 black
+       #  rdis fp37_averaged.dat black
+       #  rdis fadc.averin green
+       #  rdis2 fadc.averin green
+       #  rdis flasim.dist orange
+       #   rdis fadc.dave cyan
+       #   rdis2 fadc.dave black
+       #   rdis2 fadc.dave.ph1d0 blue
+       #   rdis2 fadc.dave.ph0d75 red
+       #   rdis2 fadc.dave.ph1d25 forest
+       #   rdis2 fadc.dave.ph1d5 magenta
+       #   rdis2 fadc.dave.simple orange
+        #  rdis2 fadc.dave.curin1 cyan
+        #  rdis2 fadc.dave.parin torquoise 
+       #   rdis2 fadc.dave.herin orange
+       #   rdis2 fadc.dave.porin red
+       #   rdis2 fadc.dave.curin forest
+       #  rdis fadc.daves cyan
+       #  rdis fadc.daver forest
+       #  rdis fadc.daver.pufi green
+       #  rdis fadc.daver.ph1d0 blue
+       #  rdis fadc.daver.ph0d75 red
+       #  rdis fadc.daver.ph1d25 forest
+       #  rdis fadc.daver.ph1d5 magenta
+       #  rdis fadc.daver.ph1d375 black
+         rdis fadc.daver.pmt250 orange
+       #  rdis fadc.daver.pmt1000 orange
+       # rdis fadc.daver.ga250 orange
+       #  rdis fadc.daver orange
+       ##  rdis2 fadc.daver violet
+        ## hga 98.5 170.76 114.5 14 22 red
+        ## hgd 98.5 2300 114.5 14 22 red
+        # rdis fadc.davesa magenta
+       #  rdis fadc.deco torquoise
+       #  rdis fadc.deco.ph1d0 blue
+       #  rdis fadc.deco.ph0d75 red
+       #  rdis fadc.deco.ph1d25 forest
+       #  rdis fadc.deco.ph1d5 magenta
+       #  rdis fadc.deco.ph1d375 black
+         rdis fadc.deco.pmt250 torquoise
+        # rdis fadc.deco.pmt1000 torquoise
+        # rdis fadc.deco.ga250 torquoise
+        # rdis fp37_deconvolved.dat black
+        # rdis fp37_shaped.dat black
+       # rdis fadc.shaped forest
+       # rdit fadc.shaped.gapd12516 forest 186
+         rdis fadc.shaped.pmt250 forest
+        # rdis fadc.shaped.pmt1000 yellow
+        # rdis fadc.shaped.ga250 yellow
+        # rdis fadc.shapin black
+        # rdis oshape.dat blue
+         relocate 50 0
+         ltype 2
+         draw 200 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         putlabel 4 signal
+         relocate (29000 29600)
+         ctype green
+         putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+         putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+         putlabel 4 adc samples averaged
+         relocate (29000 27800)
+         ctype torquoise
+         putlabel 4 deconvolved
+         relocate (29000 27200)
+        # ctype orange
+         ctype forest
+         putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+         putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+         putlabel 4 averaged derivative
+        # putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 Amplitude (ADC counts)
+         angle 0
+         ctype black  
+         relocate 99.3 0
+        # draw 99.3 70
+         #draw 100.7 70
+         relocate 100.7 70
+         #draw 100.7 0
+         ctype black
+         dev X11
+
+pato      dev postportfile simusytt10.ps
+         macro read colors.sm
+         colors
+         lweight 2
+         bol1 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+   # Time 0 as for ADC phase
+       #  madi gapd10985_250MHz_10pe_new_sys.dis 1 8 -3.0 0.08 forest 905.519
+       #  madi gapd10985_250MHz_10pe_new_sys.dis 1 9 -3.0 0.08 blue 908.245
+         madi gapd12516_250MHz_10pe_allnsb0.dis 1 8 -4.0 0.1 forest 912.026
+         madi gapd12516_250MHz_10pe_allnsb0.dis 1 9 -4.0 0.1 blue 914.810
+         relocate (16200 30200)
+         putlabel 4 All effects
+         bor1 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_phases_news.dis 1 8 -1 0.02 forest 905.519
+       #  madi gapd10985_250MHz_10pe_phases_news.dis 1 9 -1 0.02 blue 908.245
+         madi gapd10985_250MHz_10pe_allnsb0.dis 1 8 -4.0 0.1 forest 905.869
+         madi gapd10985_250MHz_10pe_allnsb0.dis 1 9 -4.0 0.1 blue 908.402
+         relocate (29200 30200)
+         putlabel 4 ADC phase
+         relocate (29200 29500)
+         #putlabel 4 ADC phase
+         bol2 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_spe_sys.dis 1 8 -0.8 0.009 forest 905.519
+       #  madi gapd10985_250MHz_10pe_spe_sys.dis 1 9 -0.8 0.009 blue 908.245
+         madi gapd12516_250MHz_10pe_allnsb0.dis 1 8 -4.0 0.1 forest 912.026
+         madi gapd12516_250MHz_10pe_allnsb0.dis 1 9 -4.0 0.1 blue 914.810
+         relocate (16200 23200)
+         putlabel 4 SPE
+         bor2 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_spehalf_sys.dis 1 8 -0.8 0.009 forest 905.519
+       #  madi gapd10985_250MHz_10pe_spehalf_sys.dis 1 9 -0.8 0.009 blue 908.245
+         madi gapd10985_250MHz_10pe_allnsb50.dis 1 8 -4.0 0.1 forest 905.869
+         madi gapd10985_250MHz_10pe_allnsb50.dis 1 9 -4.0 0.1 blue 908.402
+         relocate (29200 23200)
+         putlabel 4 SPE reduced
+         bol3 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_enoise_sys.dis 1 8 -0.8 0.012 forest 905.519
+       #  madi gapd10985_250MHz_10pe_enoise_sys.dis 1 9 -0.8 0.012 blue 908.245
+         madi gapd12516_250MHz_10pe_allnsb50.dis 1 8 -4.0 0.1 forest 912.026
+         madi gapd12516_250MHz_10pe_allnsb50.dis 1 9 -4.0 0.1 blue 914.810
+         relocate (16200 16200)
+         putlabel 4 Electronic noise 
+         relocate (16200 15500) 
+         putlabel 4 (0.15 p.e.)
+         bor3 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_atime5fine_sys.dis 1 8 -2 0.05 forest 905.519
+       #  madi gapd10985_250MHz_10pe_atime5fine_sys.dis 1 9 -2 0.05 blue 908.245
+         madi gapd10985_250MHz_10pe_allnsb100.dis 1 8 -4.0 0.1 forest 905.869
+         madi gapd10985_250MHz_10pe_allnsb100.dis 1 9 -4.0 0.1 blue 908.402
+         relocate (29200 16200)
+         putlabel 4 Arrival time
+         relocate (29200 15500)
+         putlabel 4 (5 ns)
+         bol4 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_tenoise6_sys.dis 1 8 -1.5 0.025 forest 905.519
+       #  madi gapd10985_250MHz_10pe_tenoise6_sys.dis 1 9 -1.5 0.025 blue 908.245
+         madi gapd12516_250MHz_10pe_allnsb200.dis 1 8 -4.0 0.1 forest 912.026
+         madi gapd12516_250MHz_10pe_allnsb200.dis 1 9 -4.0 0.1 blue 914.810
+         relocate (16200 9200)
+         putlabel 4 Thermal noise 
+         relocate (16200 8500)
+         putlabel 4 (NSB = 6 MHz)
+         bor4 -4.5 6.5 0.5 2 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_nsb100_sys.dis 1 8 -2.5 0.065 forest 905.519
+       #  madi gapd10985_250MHz_10pe_nsb100_sys.dis 1 9 -2.5 0.065 blue 908.245
+         madi gapd10985_250MHz_10pe_allnsb200.dis 1 8 -4.0 0.1 forest 905.869
+         madi gapd10985_250MHz_10pe_allnsb200.dis 1 9 -4.0 0.1 blue 908.402
+         relocate (29200 9200)
+         putlabel 4 NSB = 100 MHz
+         ctype black
+         expand 0.8
+         relocate (1600 17000)
+         angle 90
+         putlabel 5 P(T)
+         angle 0
+         relocate (17000 1600)
+         putlabel 5 Time (ns)
+         dev X11
+
+pat      dev postportfile simusyttem10.ps
+         macro read colors.sm
+         colors
+         lweight 2
+         bol1 -3.5 5.5 1 2 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_allnsb0.dis 1 8 -3 0.08 forest 905.443
+         madi gapd10985_250MHz_10pe_allnsb0.dis 1 9 -3 0.08 blue 908.200
+         relocate (16200 30200)
+         putlabel 4 All effects
+         relocate (16200 29500)
+         putlabel 4 (No NSB)
+         bor1 -3.5 5.5 1 2 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_phases_system.dis 1 8 -2 0.035 forest 905.443
+         madi gapd10985_250MHz_10pe_phases_system.dis 1 9 -2 0.035 blue 908.200
+         relocate (29200 30200)
+         putlabel 4 ADC phase
+         relocate (29200 29500)
+         #putlabel 4 ADC phase
+         bol2 -3.5 5.5 1 2 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_spe_systet.dis 1 8 -2 0.035 forest 905.443
+         madi gapd10985_250MHz_10pe_spe_systet.dis 1 9 -2 0.035 blue 908.200
+         relocate (16200 23200)
+         putlabel 4 SPE
+         bor2 -3.5 5.5 1 2 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_atime5_systet.dis 1 8 -3 0.08 forest 905.443
+         madi gapd10985_250MHz_10pe_atime5_systet.dis 1 9 -3 0.08 blue 908.200
+         relocate (29200 23200)
+         putlabel 4 Arrival time
+         relocate (29200 22500)
+         putlabel 4 (5 ns)
+         bol3 -3.5 5.5 1 2 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_nsb50_systet.dis 1 8 -3 0.08 forest 905.443
+         madi gapd10985_250MHz_10pe_nsb50_systet.dis 1 9 -3 0.08 blue 908.200
+         relocate (16200 16200)
+         putlabel 4 NSB = 50 MHz 
+         bor3 -3.5 5.5 1 2  -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_enoise_systet.dis 1 8 -2 0.035 forest 905.443
+         madi gapd10985_250MHz_10pe_enoise_systet.dis 1 9 -2 0.035 blue 908.200
+         relocate (29200 16200)
+         putlabel 4 Electronic noise
+         relocate (29200 15500)
+         putlabel 4 (0.15 p.e.)
+         bol4 -3.5 5.5 1 2 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_nsb100_systet.dis 1 8 -3 0.08 forest 905.443
+         madi gapd10985_250MHz_10pe_nsb100_systet.dis 1 9 -3 0.08 blue 908.200
+         relocate (16200 9200)
+         putlabel 4 NSB = 100 MHz 
+         bor4 -3.5 5.5 1 2 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_tenoise06_systet.dis 1 8 -2 0.035 forest 905.443
+         madi gapd10985_250MHz_10pe_tenoise06_systet.dis 1 9 -2 0.035 blue 908.200
+         relocate (29200 9200)
+         putlabel 4 Thermal noise
+         relocate (29200 8500)
+         putlabel 4 (NSB = 0.6 MHz)
+         ctype black
+         expand 0.8
+         relocate (1600 17000)
+         angle 90
+         putlabel 5 P(T)
+         angle 0
+         relocate (17000 1600)
+         putlabel 5 Time (ns)
+         dev X11
+
+pas      dev postportfile simusystem10.ps
+         macro read colors.sm
+         colors
+         lweight 2
+         bol1 4 19 1 5 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_allnsb0.dis 1 6 5 0.13 forest 0
+         madi gapd10985_250MHz_10pe_allnsb0.dis 1 7 5 0.13 blue 0
+         rdis polo10b0.dat black
+         relocate (16200 30200)
+         putlabel 4 All effects
+         relocate (16200 29500)
+         putlabel 4 (No NSB)
+         bor1 4 19 1 5 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_phases_system.dis 1 6 9.0 0.02 forest 0
+         madi gapd10985_250MHz_10pe_phases_system.dis 1 7 9.0 0.02 blue 0
+         rdis polo10b0.dat black
+         relocate (29200 30200)
+         putlabel 4 ADC phase
+         relocate (29200 29500)
+         #putlabel 4 ADC phase
+         bol2 4 19 1 5 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_spe_system.dis 1 6 5 0.13 forest 0
+         madi gapd10985_250MHz_10pe_spe_system.dis 1 7 5 0.13 blue 0
+        # madi gapd12516_250MHz_10pe_allnsb50.dis 1 6 5 0.18 red 0
+        # madi gapd12516_250MHz_10pe_allnsb50.dis 1 7 5 0.18 blue 0
+         rdis polo10b0.dat black
+         relocate (16200 23200)
+         putlabel 4 SPE
+         bor2 4 19 1 5 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_atime5_system.dis 1 6 8.6 0.03 forest 0
+         madi gapd10985_250MHz_10pe_atime5_system.dis 1 7 8.6 0.03 blue 0
+       #  madi gapd10985_250MHz_10pe_allnsb50.dis 1 6 5 0.18 red 0
+       #  madi gapd10985_250MHz_10pe_allnsb50.dis 1 7 5 0.18 blue 0
+         rdis polo10b0.dat black
+         relocate (29200 23200)
+         putlabel 4 Arrival time
+         relocate (29200 22500)
+         putlabel 4 (5 ns)
+         bol3 4 19 1 5 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_nsb50_system.dis 1 6 5 0.13 forest 0
+         madi gapd10985_250MHz_10pe_nsb50_system.dis 1 7 5 0.13 blue 0
+       #  madi gapd12516_250MHz_10pe_allnsb100.dis 1 6 5 0.18 red 0
+       #  madi gapd12516_250MHz_10pe_allnsb100.dis 1 7 5 0.18 blue 0
+         rdis polo10b0.dat black
+         relocate (16200 16200)
+         putlabel 4 NSB = 50 MHz 
+         bor3 4 19 1 5 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_enoise_system.dis 1 6 9.5 0.01 forest 0
+         madi gapd10985_250MHz_10pe_enoise_system.dis 1 7 9.5 0.01 blue 0
+       #  madi gapd10985_250MHz_10pe_allnsb100.dis 1 6 5 0.18 red 0
+       #  madi gapd10985_250MHz_10pe_allnsb100.dis 1 7 5 0.18 blue 0
+       #  madi gapd12516c100_250MHz_10pe_allnsb100.dis 1 6 5 0.18 red 0
+       #  madi gapd12516c100_250MHz_10pe_allnsb100.dis 1 7 5 0.18 blue 0
+         rdis polo10b0.dat black
+         relocate (29200 16200)
+         putlabel 4 Electronic noise
+         relocate (29200 15500)
+         putlabel 4 (0.15 p.e.)
+         bol4 4 19 1 5 -0.05 1.1 0.1 0.5
+         madi gapd10985_250MHz_10pe_nsb100_system.dis 1 6 5 0.13 forest 0
+         madi gapd10985_250MHz_10pe_nsb100_system.dis 1 7 5 0.13 blue 0
+      #   madi gapd12516_250MHz_10pe_allnsb200.dis 1 6 5 0.18 red 0
+      #   madi gapd12516_250MHz_10pe_allnsb200.dis 1 7 5 0.18 blue 0
+         rdis polo10b0.dat black
+         relocate (16200 9200)
+         putlabel 4 NSB = 100 MHz 
+         bor4 4 19 1 5 -0.05 1.1 0.1 0.5
+      #   madi gapd10985_250MHz_10pe_nsb100_sys.dis 1 6 5 0.13 forest 0
+      #   madi gapd10985_250MHz_10pe_nsb100_sys.dis 1 7 5 0.13 blue 0
+         madi gapd10985_250MHz_10pe_tenoise06_system.dis 1 6 9 0.03 forest 0
+         madi gapd10985_250MHz_10pe_tenoise06_system.dis 1 7 9 0.03 blue 0
+         rdis polo10b0.dat black
+         relocate (29200 9200)
+         putlabel 4 Thermal noise
+         relocate (29200 8500)
+         putlabel 4 (NSB = 0.6 MHz)
+         ctype black
+         expand 0.8
+         relocate (1600 17000)
+         angle 90
+         putlabel 5 P(A)
+         angle 0
+         relocate (17000 1600)
+         putlabel 5 Amplitude (p.e.)
+         dev X11
+
+
+pod      dev postportfile fladisys10.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+       #  bo1 2 12 1 2 -0.05 1.1 0.1 0.2
+         bo1 5 20 1 4 -0.05 1.1 0.1 0.2
+       #  bo1 10 32 2 10 -0.05 1.1 0.1 0.2
+       #  bo1 35 70 2 10 -0.05 1.1 0.1 0.2
+       #  bo1 75 115 2 10 -0.05 1.1 0.1 0.2
+       #  madi flaszka_gapd_250MHz_5pe_sys.dis 43.432 5 0 0.15 blue 4.57
+         madi flaszka_gapd_250MHz_10pe_sys.dis 43.432 5 0 0.2 blue 4.71
+         madi flaszka_gapd_250MHz_10pe_syshalf.dis 43.432 5 0 0.2 violet 4.42
+         madi flaszka_gapd_250MHz_10pe_enoise_sys.dis 43.432 5 9.9 0.05 red 0
+         madi flaszka_gapd_250MHz_10pe_spe_sys.dis 43.432 5 0 0.2 cyan 0
+         madi flaszka_gapd_250MHz_phases_10000.dis 43.432 5 8 0.04 black 0
+         madi flaszka_gapd_250MHz_10pe_atime_sys.dis 43.432 5 0 0.2 green 0
+         madi flaszka_gapd_250MHz_10pe_tenoise6_sys.dis 43.432 5 0 0.2 orange 4.17
+         madi flaszka_gapd_250MHz_10pe_nsb100_sys.dis 43.432 5 0 0.2 yellow 69.58
+       #  madi flaszka_gapd_250MHz_20pe_sys.dis 43.432 5 10 0.25 blue 4.47
+       #  madi flaszka_gapd_250MHz_50pe_sys.dis 43.432 5 35 0.35 blue 4.83
+       #  madi flaszka_gapd_250MHz_100pe_sys.dis 43.432 5 75 0.4 blue 4.82
+       #  rdis polo10b0.dat red
+       #  fahn poisson10.dat violet 0.000008
+       #  ltype 2
+         relocate 0 0
+         draw 30 0
+       #  ltype 0
+       #  bo2 2 12 1 2 -0.05 1.1 0.1 0.2
+         bo2 5 20 1 4 -0.05 1.1 0.1 0.2
+       #  bo2 10 32 2 10 -0.05 1.1 0.1 0.2
+       #  bo2 35 70 2 10 -0.05 1.1 0.1 0.2
+       #  bo2 85 125 2 10 -0.05 1.1 0.1 0.2
+       #  madi flaszka_gapd_250MHz_5pe_sys.dis 30.322 3 0 0.15 forest 4.57
+         madi flaszka_gapd_250MHz_10pe_sys.dis 30.322 3 0 0.2 forest 4.71
+         madi flaszka_gapd_250MHz_10pe_syshalf.dis 30.322 3 0 0.2 violet 4.42
+         madi flaszka_gapd_250MHz_10pe_enoise_sys.dis 30.322 3 9.9 0.03 red 0
+         madi flaszka_gapd_250MHz_10pe_spe_sys.dis 30.322 3 0 0.2 cyan 0
+         madi flaszka_gapd_250MHz_phases_10000.dis 30.322 3 8 0.04 black 0
+         madi flaszka_gapd_250MHz_10pe_atime_sys.dis 30.322 3 0 0.2 green 0
+         madi flaszka_gapd_250MHz_10pe_tenoise6_sys.dis 30.322 3 0 0.2 orange 4.17
+         madi flaszka_gapd_250MHz_10pe_nsb100_sys.dis 30.322 3 0 0.2 yellow 69.58
+       #  madi flaszka_gapd_250MHz_20pe_sys.dis 30.322 3 10 0.25 forest 4.47
+       #  madi flaszka_gapd_250MHz_50pe_sys.dis 30.322 3 35 0.35 forest 4.83
+       #  madi flaszka_gapd_250MHz_100pe_sys.dis 30.322 3 85 0.4 forest 4.82
+       #  rdis polo10b0.dat blue
+        # ltype 2
+         relocate 0 0
+         draw 30 0
+        # ltype 0
+       #  blo3 102 109.5 0.5 2 -0.05 1.1 0.1 0.2
+         blo3 102 109 0.5 2 -0.05 1.1 0.1 0.2
+       #  blo3 103.2 108.0 0.2 1 -0.05 1.1 0.1 0.2
+       #  blo3 104.2 107.6 0.2 1 -0.05 1.1 0.1 0.2
+       #  blo3 104.5 107.5 0.2 1 -0.05 1.1 0.1 0.2
+       #  mahi flaszka_gapd_250MHz_5pe_sys.dis 1 10 102.4 0.07 blue
+         mahi flaszka_gapd_250MHz_10pe_sys.dis 1 10 101.1 0.076 blue
+       #  mahi flaszka_gapd_250MHz_10pe_syshalf.dis 1 10 101.1 0.076 red
+       #  mahi flaszka_gapd_250MHz_20pe_sys.dis 1 10 103.5 0.045 blue
+       #  mahi flaszka_gapd_250MHz_50pe_sys.dis 1 10 104.4 0.03 blue
+       #  mahi flaszka_gapd_250MHz_100pe_sys.dis 1 10 104.9 0.02 blue
+         relocate 102.5 0
+         draw 110.5 0
+        # bro3 104 111 0.5 2 -0.05 1.1 0.1 0.2
+         bro3 102 109 0.5 2 -0.05 1.1 0.1 0.2
+        # bro3 105.5 107.9 0.1 0.5 -0.05 1.1 0.1 0.2 
+        # bro3 105.7 107.8 0.2 1 -0.05 1.1 0.1 0.2
+        # bro3 104.5 107.5 0.2 1 -0.05 1.1 0.1 0.2
+        # mahi flaszka_gapd_250MHz_5pe_sys.dis 1 11 104.6 0.06 forest
+         mahi flaszka_gapd_250MHz_10pe_sys.dis 1 11 104.6 0.04 forest
+        # mahi flaszka_gapd_250MHz_10pe_syshalf.dis 1 11 104.6 0.04 red
+        # mahi flaszka_gapd_250MHz_20pe_sys.dis 1 11 105.6 0.022 forest
+        # mahi flaszka_gapd_250MHz_50pe_sys.dis 1 11 105.9 0.027 forest
+        # mahi flaszka_gapd_250MHz_100pe_sys.dis 1 11 106.15 0.01 forest
+         ctype black
+         relocate 102.5 0
+         draw 110.5 0
+	 expand 0.75
+         relocate (29000 30000)
+         ctype red
+       #  putlabel 4 ADC phase
+       #  putlabel 4 GAPD SPE
+       #  putlabel 4 GAPD noise
+       #  putlabel 4 electronic noise
+       #  putlabel 4 photon arrival time
+       #  putlabel 4 NSB
+         ctype black
+       #  putlabel 4 All effects
+         ctype black
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+pru    
+         dev postportfile runga250mhz100nsbrun1.ps
+      #   dev postportfile run10985s250.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+	 expand 0.85
+	# bo 95 145 5 10 -70 140 10 20
+        # bo 140 200 10 20 -100 100 10 50
+         bo 600 1300 50 100 -60 250 20 100
+       #  bo 108 108.5 0.1 1 213.1 213.3 0.1 0.2
+         sph cherenkov.photons.run1 blue
+         sph nsb.photons.run1 red
+       #  phs detector.signals blue
+       #  sph photon.bunches orange
+        # rdis detector.pulse red
+        # rdis amplifier.pulse green
+         fah fadc.samples.run1 black
+       #  rdis fadc.aver.run1 cyan
+         rdis fadc.daver.run1 magenta
+        # rdis fadc.davesa magenta
+        # rdis fadc.dave orange
+         rdis fadc.deco.run1 forest
+        # rdis fadc.shaped orange
+        # rdis fadc.shapin black
+         rdit fadc.deco.10985 green 80
+         ctype red
+         relocate 600 43.75
+         ltype 2
+         draw 1300 43.75
+         ltype 0
+         relocate 0 158
+         ctype blue
+        # draw 500 158
+         ctype black
+         expand 0.65
+         relocate (29000 30200)
+         ctype blue
+         putlabel 4 Cherenkov photons
+         relocate (29000 29600)
+         ctype red
+         putlabel 4 NSB photons
+         relocate (29000 29000)
+         ctype black
+         putlabel 4 ADC samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype forest
+         putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype blue
+        # putlabel 4 shaped
+         ctype green
+         putlabel 4 devonvolved template
+         relocate (29000 27200)
+         ctype black
+        # putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 27200)
+         ctype magenta
+         putlabel 4 averaged derivative
+         ctype black
+	 expand 0.75
+	 relocate (16850 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 24700)
+	 putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+
+pu    
+      #   dev postportfile flarunpm250mhz200nsb.ps
+         dev postportfile run10985s250.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+	 expand 0.85
+	# bo 95 145 5 10 -70 140 10 20
+        # bo 140 200 10 20 -100 100 10 50
+         bo 600 1300 50 100 -10 200 20 100
+       #  bo 108 108.5 0.1 1 213.1 213.3 0.1 0.2
+         sph cherenkov.photons blue
+         sph nsb.photons red
+       #  phs detector.signals blue
+       #  sph photon.bunches orange
+        # rdis detector.pulse red
+        # rdis amplifier.pulse green
+         fah fadc.samples black
+       #  rdis fadc.averin magenta
+       #  rdis fadc.daver magenta
+        # rdis fadc.davesa magenta
+        # rdis fadc.dave orange
+         rdis fadc.deco forest
+        # rdis fadc.shaped orange
+        # rdis fadc.shapin black
+         ctype red
+         relocate 600 29.4
+         ltype 2
+         draw 1300 29.4
+         ltype 0
+         relocate 0 158
+         ctype blue
+        # draw 500 158
+         ctype black
+         expand 0.65
+         relocate (29000 30200)
+         ctype blue
+         putlabel 4 Cherenkov photons
+         relocate (29000 29600)
+         ctype red
+         putlabel 4 NSB photons
+         relocate (29000 29000)
+         ctype black
+         putlabel 4 ADC samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype forest
+         putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype blue
+        # putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+        # putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+ 
+pspe     dev postportfile gapdspe.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo 0 4.5 0.2 1 -0.05 1.1 0.1 0.2
+         bo 0 5 0.2 1 -5 0.3 -1 10 
+        # rdis mppcunk.dat blue
+         data mppcunk.dat
+         read {x 1 y 2}
+         set ly = lg(y)
+         ctype blue
+         connect x ly
+         expand 0.75
+         relocate (29000 30000)
+         ctype red
+       #  putlabel 4 P(p.e.)
+         ctype black
+      #   data mppcunk.dat
+      #   read {ss 1 pp 2}
+      #   define sump 0
+      #   define sump1 0
+      #   define sump4 0
+      #   set dimen(per) = dimen(pp)
+      #   do i = 0, dimen(pp)-1 {
+      #     define sump ($sump+pp[$i])
+      #     set per[$i] = pp[$i]
+      #     if (ss[$i] > 1.5) {
+      #       define sump1 ($sump1+pp[$i])
+      #       set per[$i] = 0.5*pp[$i]
+      #     }
+      #     if (ss[$i] > 4.5) {define sump4 ($sump4+pp[$i])}
+      #   }
+      #   ctype red
+      #   connect ss per
+      #   ctype black
+      #   write standard sump $sump $sump1 $sump4
+      #   relocate (29000 29200)
+       #  putlabel 4 p.e.
+      #   ltype 2
+      #   relocate 1 -0.05
+      #   draw 1 1.1
+         ltype 0
+         dev X11
+
+ppo      dev postportfile poisson10b.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+         bo 0 25 1 5 -0.05 1.1 0.1 0.2
+         rdis polo10b0.dat black
+         fahn poisson10.dat red 0.000008
+         expand 0.75
+         relocate (29000 30000)
+         ctype red
+         putlabel 4 P(N,\lambda=10)
+         ctype black
+         relocate (29000 29200)
+         putlabel 4 P(\lambda,N=10)
+         ltype 2
+         relocate 10 -0.05
+         draw 10 1.1
+         ltype 0
+         dev X11
+
+pdp      dev postportfile fladists.ps
+       # dev postportfile fladis7.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo1 150 400 25 50 -0.05 1.1 0.1 0.2
+        # bo1 7.5 17.5 0.5 2 -0.05 1.1 0.1 0.2
+         bo1 0 30 1 5 -0.05 1.1 0.1 0.2
+         madi flaszka_gapd_250MHz_all.dis 26.28 5 0 0.3 black 420
+       #  mahi flaszka_gapd_250MHz_ct5_1000.dis 26.28 5 8 0.03 red
+         madi flaszka_gapd_250MHz_nsb200_10000.dis 26.3 5 3 0.2 red 380
+       #  mahi flaszka_gapd_250MHz_tnoise6_1000.dis 26.28 5 8 0.06 red
+       #  mahi flaszka_gapd_250MHz_enoise20_1000.dis 26.28 5 8 0.04 red
+         mahi flaszka_gapd_250MHz_spe_10000.dis 26.28 5 7 0.1 forest
+         mahi flaszka_gapd_250MHz_phase_10000.dis 26.28 5 8 0.04 orange
+         rdis polo10b0.dat blue
+       #  fahn poisson10.dat violet 0.000008
+       #  ltype 2
+         relocate 0 0
+         draw 30 0
+       #  ltype 0
+       #  bo2 7.5 17.5 0.5 2 -0.05 1.1 0.1 0.2
+         bo2 0 30 1 5 -0.05 1.1 0.1 0.2
+         madi flaszka_gapd_250MHz_all.dis 21.315 3 0 0.3 black 325
+       #  mahi flaszka_gapd_250MHz_ct5_1000.dis 21.315 3 8 0.03 red
+         madi flaszka_gapd_250MHz_nsb200_10000.dis 21.315 3 3 0.2 red 290
+       #  mahi flaszka_gapd_250MHz_tnoise6_1000.dis 21.315 3 8 0.06 red
+       #  mahi flaszka_gapd_250MHz_enoise20_1000.dis 21.315 3 8 0.04 red
+         mahi flaszka_gapd_250MHz_spe_10000.dis 21.315 3 7 0.1 forest
+         mahi flaszka_gapd_250MHz_phase_10000.dis 26.315 3 8 0.04 orange
+         rdis polo10b0.dat blue
+        # ltype 2
+         relocate 0 0
+         draw 30 0
+        # ltype 0
+         blo3 102.5 110.5 0.5 2 -0.05 1.1 0.1 0.2
+         mahi flaszka_gapd_250MHz_all.dis 1 10 103.0 0.07 black
+        # mahi flaszka_gapd_250MHz_ct5_1000.dis 1 10 105.4 0.02 red
+         mahi flaszka_gapd_250MHz_nsb200_10000.dis 1 10 103.0 0.07 red
+        # mahi flaszka_gapd_250MHz_tnoise6_1000.dis 1 10 105.3 0.013 red
+        # mahi flaszka_gapd_250MHz_enoise20_1000.dis 1 10 105.8 0.003 red
+         mahi flaszka_gapd_250MHz_spe_10000.dis 1 10 105.7 0.003 forest
+         mahi flaszka_gapd_250MHz_phase_10000.dis 1 10 105.7 0.012 orange
+         relocate 102.5 0
+         draw 110.5 0
+         bro3 102.5 110.5 0.5 2 -0.05 1.1 0.1 0.2
+         mahi flaszka_gapd_250MHz_all.dis 1 11 103.0 0.07 black
+       #  mahi flaszka_gapd_250MHz_ct5_1000.dis 1 11 108 0.005 red
+         mahi flaszka_gapd_250MHz_nsb200_10000.dis 1 11 103.0 0.07 red
+       #  mahi flaszka_gapd_250MHz_tnoise6_1000.dis 1 11 107 0.02 red
+       #  mahi flaszka_gapd_250MHz_enoise20_1000.dis 1 11 108 0.007 red
+         mahi flaszka_gapd_250MHz_spe_10000.dis 1 11 108 0.005 forest
+         mahi flaszka_gapd_250MHz_phase_10000.dis 1 11 108 0.005 orange
+         ctype black
+         relocate 102.5 0
+         draw 110.5 0
+	 expand 0.75
+         relocate (29000 30000)
+         ctype red
+       #  putlabel 4 ADC phase
+       #  putlabel 4 GAPD SPE
+       #  putlabel 4 GAPD noise
+       #  putlabel 4 electronic noise
+       #  putlabel 4 photon arrival time
+       #  putlabel 4 NSB
+         ctype black
+         putlabel 4 All effects
+         ctype black
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+phe     # dev postportfile phases50.ps
+         dev postportfile phasedep.ps
+        # dev postportfile flaphases10985.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo -0.05 1.05 0.1 0.2 0.985 1.015 0.002 0.01
+        # bo -0.05 1.05 0.1 0.2 0.95 1.05 0.01 0.02
+        # bo 0.12 0.2 0.01 0.02 0.985 1.015 0.002 0.01
+         blo1 -0.05 1.05 0.1 0.2 0.955 1.045 0.01 0.02
+        # blo1 -0.05 1.05 0.1 0.2 0.999 1.001 0.0001 0.0005
+        # data gapd10985_250MHz_10pe_phases_system.dis
+         data gapd12516c50_250MHz_10pe_phases.dis
+         read {pa 4 rd 6 rs 7 td 8 ts 9} 
+         set rad = rd/9.977
+         set ras = rs/9.992
+         set tad = td/905.444
+         set tas = ts/908.200
+         set phase = pa/4
+         ctype forest
+         ptype 20 3
+         expand 0.33
+         points phase rad
+        # points phase tad
+         ctype blue
+         points phase ras
+        # points phase tas
+         ctype black
+         relocate -0.05 1
+         ltype 2
+         draw 1.05 1
+         ltype 0
+        # bo -0.05 1.05 0.1 0.2 0.955 1.045 0.01 0.02
+         bro1 -0.05 1.05 0.1 0.2 0.955 1.045 0.01 0.02
+        # bro1 -0.05 1.05 0.1 0.2 0.999 1.001 0.0001 0.0005
+        # data gapd10985_250MHz_50pe_phases_system.dis
+         data gapd12516c100_250MHz_10pe_phases.dis
+        # data gapd12516c50_250MHz_10pe_test5_phases.dis
+         read {pa 4 rd 6 rs 7 td 8 ts 9} 
+        # data gapd10985_250MHz_10pe_phases_news.dis
+        # read {pa 4 rd 6 rs 7 pu 16 pd 18 pm 19 dc 20 py 21 d2 22 d3 23 d4 24 d5 25 d6 26} 
+         set rad = rd/10.000
+         set ras = rs/10.001
+         set tad = td/905.442
+         set tas = ts/908.197
+       #  set rap = 1+20*(pd/903.95-1)
+       #  set ram = 0.9+0.1*pm/103.96
+       #  set rpu = pu/99.574
+       #  set rdc = dc/100
+       #  set rpy = py/100.034
+       #  set rdd = 0.91+0.1*d4/d6
+        # set rdm = d6/d5
+        # set rsu = (d4+d5+d6)/300
+        # set rd3 = d3/59
+        # Maximum at around 0.16, sum of d5 and d6 maximal
+        # set rdm = (d5+d6)/200
+        # set rda = d4/d5+0.15
+        # Maximum at around 0.91, sum of d4 and d5 maximal
+        # set rda = (d4+d5)/200
+         set phase = pa/4
+         ctype forest
+         ptype 20 3
+         expand 0.33
+         points phase rad
+        # points phase tad
+         ctype blue
+         points phase ras
+        # points phase tas
+         ctype magenta
+       #  points phase ram
+         ctype orange
+       #  points phase rpu
+       #  points phase rd3
+         ctype forest
+       #  points phase rdc
+         ctype red
+       #  points phase rpy
+         ctype green
+       #  points phase rda
+         ctype cyan
+       #  points phase rdm
+         ctype black
+       #  points phase rap
+         relocate -0.05 1
+         ltype 2
+         draw 1.05 1
+         ltype 0
+         blo2 -0.05 1.05 0.1 0.2 0.955 1.045 0.01 0.02
+         data gapd10985_250MHz_10pe_phases_system.dis
+         read {pa 4 rd 6 rs 7 td 8 ts 9} 
+         set rad = rd/9.998
+         set ras = rs/9.999
+         set phase = pa/4
+         ctype forest
+         ptype 20 3
+         expand 0.33
+         points phase rad
+         ctype blue
+         points phase ras
+         ctype black
+         relocate -0.05 1
+         ltype 2
+         draw 1.05 1
+         ltype 0
+         bro2 -0.05 1.05 0.1 0.2 0.955 1.045 0.01 0.02
+         data gapd12516c50_250MHz_10pe_test6_phases.dis
+         read {pa 4 rd 6 rs 7 td 8 ts 9} 
+         set rad = rd/10.007
+         set ras = rs/10.000
+         set phase = pa/4
+         ctype forest
+         ptype 20 3
+         expand 0.33
+         points phase rad
+         ctype blue
+         points phase ras
+         ctype black
+         relocate -0.05 1
+         ltype 2
+         draw 1.05 1
+         ltype 0
+       #  blo2 9.55 10.45 0.1 0.4 -0.05 1.1 0.1 0.5
+       #  mahi gapd10985_250MHz_10pe_phases_system.dis 1 6 9.6 0.008 forest
+       #  bro2 9.55 10.45 0.1 0.4 -0.05 1.1 0.1 0.5
+       #  mahi gapd10985_250MHz_10pe_phases_system.dis 1 7 9.6 0.008 blue
+       #  blo3 -0.85 0.85 0.1 0.5 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_phases_system.dis 1 8 -0.75 0.015 forest 905.448
+       #  bro3 -0.85 0.85 0.1 0.5 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_10pe_phases_system.dis 1 9 -0.75 0.015 blue 908.199
+       #  blo2 48 51.8 0.2 1 -0.05 1.1 0.1 0.5
+       #  mahi gapd10985_250MHz_50pe_phases_system.dis 1 6 48.3 0.032 forest
+       #  bro2 48 51.8 0.2 1 -0.05 1.1 0.1 0.5
+       #  mahi gapd10985_250MHz_50pe_phases_system.dis 1 7 48.3 0.032 blue
+       #  blo3 -0.85 0.85 0.1 0.5 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_50pe_phases_system.dis 1 8 -0.75 0.015 forest 905.446
+       #  bro3 -0.85 0.85 0.1 0.5 -0.05 1.1 0.1 0.5
+       #  madi gapd10985_250MHz_50pe_phases_system.dis 1 9 -0.75 0.015 blue 908.197
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 P
+         angle 0
+         dev X11
+
+pheold   dev postportfile flaphase10985b.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo1 2.8 7.2 0.2 1 0.996 1.004 0.001 0.002
+         bo1 -0.05 1.05 0.1 0.2 0.96 1.04 0.01 0.02
+        # bo -0.05 1.05 0.1 0.2 0.95 1.05 0.01 0.02
+        # data flaszka_gapd_250MHz_phase_10000.dis
+         data gapd10985_250MHz_10pe_phasetestb.dis
+        # read {ta 2 ra 3}
+         read {pa 4 rd 6 rs 7} 
+        # set ran = ra/213.14185
+        # set dta = ta - 72
+        # set phase = (ta - 3)/4
+        # ctype blue
+        # ptype 20 3
+        # expand 0.4
+        # points phase ran
+        # data flaszka_gapd_250MHz_phases_10000.dis
+        # read {ta 2 rs 3 ra 5}
+        # set dimen(tap) = dimen(ta)
+        # do i = 0, dimen(ta)-1 {
+        #    set tap[$i] = ta[$i]-504
+        #    if (tap[$i] < 0) {set tap[$i] = tap[$i]+4}
+        # }
+        # set ran = ra/434.235
+        # set ras = rs/303.215
+         set rad = rd/10
+         set ras = rs/10
+         set phase = pa/4
+         ctype forest
+         ptype 20 3
+         expand 0.33
+         points phase rad
+         ctype blue
+         points phase ras
+       #  data flaszka_gapd_250MHz_50pe_phases_10000.dis
+       #  read {ta 2 rs 3 ra 5}
+       #  set dimen(tap) = dimen(ta)
+       #  do i = 0, dimen(ta)-1 {
+       #     set tap[$i] = ta[$i]
+       #     if (ta[$i] < 4.0) {set tap[$i] = ta[$i]+4}
+       #  }
+       #  set ran = ra/2174.329
+       #  set ras = rs/1518.457
+       #  set phase = (tap-4)/4
+         ctype red
+         ptype 20 3
+         expand 0.33
+       #  points phase ran
+         ctype blue
+       #  points phase ras
+         ctype black
+         relocate -0.05 1
+         ltype 2
+         draw 1.05 1
+         ltype 0
+        # blo2 2065 2285 20 100 -0.05 1.1 0.1 0.2
+        # blo2 410 455 5 20 -0.05 1.1 0.1 0.2
+        blo2 9.5 10.5 0.1 0.2 -0.05 1.1 0.1 0.2
+         mahi gapd10985_250MHz_10pe_phasetestc.dis 1 6 9.6 0.008 forest
+       #  mahi flaszka_gapd_250MHz_50pe_phases_10000.dis 1 5 2075 2 red
+        #  mahi flaszka_gapd_250MHz_phases_10000.dis 1 5 413 0.4 red
+        #  mahi flaszka.dis 1 5 413 0.4 forest
+         bro2 9.5 10.5 0.1 0.2 -0.05 1.1 0.1 0.2
+         mahi gapd10985_250MHz_10pe_phasetestc.dis 1 7 9.6 0.008 blue
+        # bro2 300.7 305.7 0.5 2 -0.05 1.1 0.1 0.2
+        # mahi flaszka_gapd_250MHz_50pe_phases_10000.dis 1 3 1508.5 0.21 blue
+        #  mahi flaszka_gapd_250MHz_phases_10000.dis 1 3 301 0.043 blue
+        # mahi flaszka.dis 1 3 301 0.043 blue
+         blo3 -1 1 0.1 0.5 -0.05 1.1 0.1 0.2
+         madi gapd10985_250MHz_10pe_phasetestc.dis 1 8 -0.9 0.018 forest 905.45
+        # blo3 103.8 105.4 0.2 1.0 -0.05 1.1 0.1 0.2
+        # mahi flaszka_gapd_250MHz_50pe_phases_10000.dis 1 10 103.9 0.014 red
+        #  mahi flaszka_gapd_250MHz_phases_10000.dis 1 10 103.9 0.014 red
+        # mahi flaszka.dis 1 10 103.9 0.014 forest
+         bro3 -1 1 0.1 0.5 -0.05 1.1 0.1 0.2
+         madi gapd10985_250MHz_10pe_phasetestc.dis 1 9 -0.9 0.018 blue 908.25
+        # bro3 106.18 106.52 0.05 0.2 -0.05 1.1 0.1 0.2
+        # mahi flaszka_gapd_250MHz_50pe_phases_10000.dis 1 11 106.2 0.0038 blue
+        #  mahi flaszka_gapd_250MHz_phases_10000.dis 1 11 106.21 0.0035 blue
+        # mahi flaszka.dis 1 11 106.21 0.0029 blue
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 P
+         angle 0
+         dev X11
+
+phe2     dev postportfile flaphase2.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+         bx1 80 135 2 10 -10 120 25 50
+        # sph cherenkov.photons black
+        # rdis detector_pmt.pulse black
+        # rdis amplifier_pmt_250.pulse black
+         fah fadc_pmt_1000_ph0d0.samples blue
+         fah fadc_pmt_1000_ph0d1.samples red
+         fah fadc_pmt_1000_ph0d2.samples forest
+         fah fadc_pmt_1000_ph0d3.samples magenta
+         fah fadc_pmt_1000_ph0d4.samples orange
+         fah fadc_pmt_1000_ph0d5.samples cyan
+         fah fadc_pmt_1000_ph0d6.samples red
+         fah fadc_pmt_1000_ph0d7.samples forest
+         fah fadc_pmt_1000_ph0d8.samples magenta
+         fah fadc_pmt_1000_ph0d9.samples orange
+         relocate (29000 30200)
+         expand 0.7
+         putlabel 4 ADC samples
+         bx2 80 135 2 10 -10 150 25 50
+         rdis fadc_pmt_1000_ph0d0.deco blue
+         rdis fadc_pmt_1000_ph0d1.deco red
+         rdis fadc_pmt_1000_ph0d2.deco forest
+         rdis fadc_pmt_1000_ph0d3.deco magenta
+         rdis fadc_pmt_1000_ph0d4.deco orange
+         rdis fadc_pmt_1000_ph0d5.deco cyan
+         rdis fadc_pmt_1000_ph0d6.deco red
+         rdis fadc_pmt_1000_ph0d7.deco forest
+         rdis fadc_pmt_1000_ph0d8.deco magenta
+         rdis fadc_pmt_1000_ph0d9.deco orange
+         relocate (29000 22200)
+         expand 0.7
+         putlabel 4 deconvolved
+         bx3 80 135 2 10 -10 50 25 50
+         rdis fadc_pmt_1000_ph0d0.shaped blue
+         rdis fadc_pmt_1000_ph0d1.shaped red
+         rdis fadc_pmt_1000_ph0d2.shaped forest
+         rdis fadc_pmt_1000_ph0d3.shaped magenta
+         rdis fadc_pmt_1000_ph0d4.shaped orange
+         rdis fadc_pmt_1000_ph0d5.shaped cyan
+         rdis fadc_pmt_1000_ph0d6.shaped red
+         rdis fadc_pmt_1000_ph0d7.shaped forest
+         rdis fadc_pmt_1000_ph0d8.shaped magenta
+         rdis fadc_pmt_1000_ph0d9.shaped orange
+         relocate (29000 14200)
+         expand 0.7
+         putlabel 4 shaped
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+phe1     dev postportfile flaphase1.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+         bx1 80 135 2 10 -10 120 25 50
+        # sph cherenkov.photons black
+        # rdis detector_pmt.pulse black
+        # rdis amplifier_pmt_250.pulse black
+         fah fadc_pmt_250_phm3d0.samples blue
+        # fah fadc_pmt_250_phm3d28.samples black
+        # fah fadc.samples black
+         fah fadc_pmt_250_phm3d4.samples red
+         fah fadc_pmt_250_phm3d8.samples forest
+         fah fadc_pmt_250_phm4d2.samples magenta
+         fah fadc_pmt_250_phm4d6.samples orange
+         fah fadc_pmt_250_phm5d0.samples cyan
+         fah fadc_pmt_250_phm5d4.samples red
+         fah fadc_pmt_250_phm5d8.samples forest
+         fah fadc_pmt_250_phm6d2.samples magenta
+         fah fadc_pmt_250_phm6d6.samples orange
+         relocate (29000 30200)
+         expand 0.7
+         putlabel 4 ADC samples
+         bx2 80 135 2 10 -15 170 25 50
+         rdis fadc_pmt_250_phm3d0.deco blue
+        # rdis fadc_pmt_250_phm3d28.deco black
+         rdis fadc_pmt_250_phm3d4.deco red
+         rdis fadc_pmt_250_phm3d8.deco forest
+         rdis fadc_pmt_250_phm4d2.deco magenta
+         rdis fadc_pmt_250_phm4d6.deco orange
+         rdis fadc_pmt_250_phm5d0.deco cyan
+         rdis fadc_pmt_250_phm5d4.deco red
+         rdis fadc_pmt_250_phm5d8.deco forest
+         rdis fadc_pmt_250_phm6d2.deco magenta
+         rdis fadc_pmt_250_phm6d6.deco orange
+         relocate (29000 22200)
+         expand 0.7
+         putlabel 4 deconvolved
+         bx3 80 135 2 10 -10 90 25 50
+         rdis fadc_pmt_250_phm3d0.shaped blue
+        # rdis fadc_pmt_250_phm3d28.shaped black
+         rdis fadc_pmt_250_phm3d4.shaped red
+         rdis fadc_pmt_250_phm3d8.shaped forest
+         rdis fadc_pmt_250_phm4d2.shaped magenta
+         rdis fadc_pmt_250_phm4d6.shaped orange
+         rdis fadc_pmt_250_phm5d0.shaped cyan
+         rdis fadc_pmt_250_phm5d4.shaped red
+         rdis fadc_pmt_250_phm5d8.shaped forest
+         rdis fadc_pmt_250_phm6d2.shaped magenta
+         rdis fadc_pmt_250_phm6d6.shaped orange
+         relocate (29000 14200)
+         expand 0.7
+         putlabel 4 shaped
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+pd1      dev postportfile flaszkapro1.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo1 150 400 25 50 -0.05 1.1 0.1 0.2
+        # bo1 7.5 17.5 0.5 2 -0.05 1.1 0.1 0.2
+         bo1 3 23 2 10 -0.05 1.1 0.1 0.2
+       #  mahi flaszka.dis 21.315 3 8 0.5 red
+         madi flaszka_gapd_250MHz_nsb200_10000.dis 21.3 3 1.5 0.21 red 300
+         mahi flaszka_gapd_250MHz_tnoise6_1000.dis 21.315 3 8 0.05 orange
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 21.315 3 8 0.04 forest
+         mahi flaszka_gapd_250MHz_spe_10000.dis 21.315 3 7 0.1 black
+         mahi flaszka_gapd_250MHz_phase_10000.dis 21.315 3 8 0.04 blue
+         rdis polo10b0.dat black
+       #  bo2 7.5 17.5 0.5 2 -0.05 1.1 0.1 0.2
+         bo2 3 23 2 10 -0.05 1.1 0.1 0.2
+      #   mahi flaszka.dis 26.28 5 8 0.5 red
+         madi flaszka_gapd_250MHz_nsb200_10000.dis 26.3 3 3 0.2 red 250
+         mahi flaszka_gapd_250MHz_tnoise6_1000.dis 26.28 5 8 0.05 orange
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 26.28 5 8 0.04 forest
+         mahi flaszka_gapd_250MHz_spe_10000.dis 26.28 5 7 0.1 black
+         mahi flaszka_gapd_250MHz_phase_10000.dis 26.28 5 9 0.02 blue
+         rdis polo10b0.dat black
+         blo3 103 109.7 0.5 2 -0.05 1.1 0.1 0.2
+       #  mahi flaszka.dis 1 10 105.4 0.02 torquoise
+         mahi flaszka_gapd_250MHz_nsb200_10000.dis 1 10 103.0 0.07 red
+         mahi flaszka_gapd_250MHz_tnoise6_1000.dis 1 10 105.3 0.013 orange
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 1 10 105.8 0.003 forest
+         mahi flaszka_gapd_250MHz_spe_10000.dis 1 10 105.7 0.003 black
+         mahi flaszka_gapd_250MHz_phase_10000.dis 1 10 105.7 0.012 blue
+         relocate 104 0
+         draw 108 0
+         bro3 103.0 109.7 0.5 2 -0.05 1.1 0.1 0.2
+         mahi flaszka_gapd_250MHz_nsb200_10000.dis 1 11 103.0 0.07 red
+         mahi flaszka_gapd_250MHz_tnoise6_1000.dis 1 11 107 0.02 orange
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 1 11 108 0.007 forest
+         mahi flaszka_gapd_250MHz_spe_10000.dis 1 11 108 0.005 black
+         mahi flaszka_gapd_250MHz_phase_10000.dis 1 11 108 0.005 blue
+         ctype black
+         relocate 104 0
+         draw 109.0 0
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+ph1      dev postportfile flaszkahis1.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+         bo1 150 400 25 50 -0.05 1.1 0.1 0.2
+        # mahi flaszka.dis 3 205 0.075 torquoise
+         mahi flaszka_gapd_250MHz_tnoise6_1000.dis 3 205 0.4 cyan
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 3 205 0.075 forest
+         mahi flaszka_gapd_250MHz_spe_1000.dis 3 170 2 black
+         mahi flaszka_gapd_250MHz_phase_1000.dis 3 212 0.02 blue
+         bo2 210 460 25 50 -0.05 1.1 0.1 0.2
+         mahi flaszka.dis 5 250 0.08 torquoise
+         mahi flaszka_gapd_250MHz_tnoise6_1000.dis 5 255 0.7 cyan
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 5 250 0.08 forest
+         mahi flaszka_gapd_250MHz_spe_1000.dis 5 220 2 black
+         mahi flaszka_gapd_250MHz_phase_1000.dis 5 257 0.12 blue
+         blo3 105.3 107.1 0.2 0.4 -0.05 1.1 0.1 0.2
+         mahi flaszka.dis 10 105.4 0.02 torquoise
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 10 105.7 0.012 forest
+         mahi flaszka_gapd_250MHz_spe_1000.dis 10 105.7 0.012 black
+         mahi flaszka_gapd_250MHz_phase_1000.dis 10 105.7 0.012 blue
+         bro3 107.1 108.6 0.1 0.2 -0.05 1.1 0.1 0.2
+         mahi flaszka.dis 11 107.2 0.01 torquoise
+         mahi flaszka_gapd_250MHz_enoise20_1000.dis 11 108 0.006 forest
+         mahi flaszka_gapd_250MHz_spe_1000.dis 11 108 0.005 black
+         mahi flaszka_gapd_250MHz_phase_1000.dis 11 108 0.005 blue
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+ph       dev postportfile flaszkahis.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo 99 111 1 2 -0.02 1.05 0.1 0.2
+         bo1 212.3 214 0.1 0.5 -0.05 1.1 0.1 0.2
+         mahi flaszka_gapd_250MHz_phase_100.dis 3 212 0.02 blue
+       #  mahi flaszka_gapd_250MHz_fine_10000.dis 3 212 0.02 cyan
+       #  mahi flaszka_gapd_250MHz_finetime_10000.dis 3 212 0.02 black
+         bo2 256.5 269 1 5 -0.05 1.1 0.1 0.2
+         mahi flaszka_gapd_250MHz_phase_100.dis 5 257 0.12 red
+       # mahi flaszka_gapd_250MHz_fine_10000.dis 5 257 0.12 orange
+       # mahi flaszka_gapd_250MHz_finetime_10000.dis 5 257 0.12 black
+      ##   bo3 3570 3775 10 50 -0.05 1.1 0.1 0.2
+      ##   mahi flaszka.dis 6 3570 2 forest
+      ##   mahi flaszka_gapd_250MHz_coarse_10000.dis 6 3570 2 green
+          blo3 105.5 107.1 0.2 0.4 -0.05 1.1 0.1 0.2
+          mahi flaszka_gapd_250MHz_phase_100.dis 10 105.7 0.012 forest
+          bro3 108 108.5 0.05 0.1 -0.05 1.1 0.1 0.2
+          mahi flaszka_gapd_250MHz_phase_100.dis 11 108 0.005 violet
+         # mahi flaszka_gapd_250MHz_fine_10000.dis 11 108 0.005 green
+        #  mahi flaszka_gapd_250MHz_finetime_10000.dis 11 108 0.005 black
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+
+pk       dev postportfile flaszkadis.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+         bo 2.8 7.2 0.2 1 0.996 1.004 0.001 0.002
+         data flaszka.dis
+         read {ta 2 ra 3}
+         set ran = ra/213.14185
+         set dta = ta - 72
+         ctype blue
+         ptype 20 3
+         expand 0.4
+         points ta ran
+         ctype black
+         relocate 2.9 1
+         ltype 2
+         draw 7.1 1
+         ltype 0
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 t_{ADC}-t_{0} [ns]
+         putlabel 5 t_{ADC} [ns]
+	 angle 90
+	 relocate (1700 24500)
+	 putlabel 5 A_{sh}/A_{sh}
+         relocate (1420 24860)
+         putlabel 5 -
+         angle 0
+         dev X11
+
+pus      dev postportfile pulses10985.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+	 expand 0.85
+         bo 880 1050 10 50 -40 180 10 50
+         sph cherenkov.photons black
+        # sph nsb.photons red
+        # sph thermal.photons forest
+         rdis detector.pulse.10985 red
+         rdis amplifier.pulse.10985 green
+         fah fadc.samples.10985 blue
+         rdis fadc.aver.10985 magenta
+         rdis fadc.daver.10985 orange
+         rdis fadc.deco.10985 torquoise
+         rdis fadc.shaped.10985 yellow
+         data pulse_GAPD.dat
+         lines 9 359
+         read {gtt 1 gpp 2}
+         set gt = gtt+895
+         set gp = 0.55*gpp
+         connect gt gp
+         relocate 800 0
+         ltype 2
+         draw 1300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         putlabel 4 signal
+         relocate (29000 29600)
+         ctype green
+         putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+         putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+         putlabel 4 adc samples averaged
+         relocate (29000 27800)
+         ctype torquoise
+         putlabel 4 deconvolved
+         relocate (29000 27200)
+        # ctype orange
+         ctype yellow
+         putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+         putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+         putlabel 4 averaged derivative
+        # putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 Amplitude (ADC counts)
+         angle 0
+         ctype black  
+         relocate 99.3 0
+        # draw 99.3 70
+         #draw 100.7 70
+         relocate 100.7 70
+         #draw 100.7 0
+         ctype black
+         dev X11
+
+py     dev postportfile phatest.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 900 930 5 10 0 110 5 20
+         fah fadc.samples.t1 blue
+         rdis fadc.inter.t1 forest
+         rdis fadc.aver.t1 magenta
+         relocate 900 100.6
+         ltype 2
+         draw 920 100.6
+         ltype 0
+         bd 900 930 5 10 0 110 5 20
+         fah fadc.samples blue
+       #  rdis fadc.inter.t1 green
+         rdis fadc.inter forest
+         rdis fadc.aver magenta
+         relocate 900 100.6
+         ltype 2
+         draw 920 100.4
+         ltype 0
+       dev X11
+
+pp       dev postportfile flatest.ps
+        # dev postportfile flapulses250.ps
+        # dev postportfile flapulses1000.ps
+        # dev postportfile flapulsesga250.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+	# bo 95 145 5 10 -70 140 10 20
+        # bo 140 200 10 20 -100 100 10 50
+         bo 850 1250 20 100 -40 180 10 50
+       #  bo 0 2000 100 400 -100 300 20 100
+       #  bo 93 107 1 2 -20 50 10 20
+       #   bo 102.9 103.1 0.1 0.2 57 62 5 10
+       #  bo 100 108 1 2 320 440 10 20
+       #  bo 903 906.5 0.2 1 155 156.5 0.1 0.2
+       #  rdis flasim.dist black
+         sph cherenkov.photons black
+         sph nsb.photons red
+        # sph thermal.photons forest
+       #  phs detector.signals blue
+       #  rdis fp37_signal.dat black
+         rdis detector.pulse red
+       #  rdit detector.pulse.gapd12516 red 181
+       #  rdis detector.pulse.pmt250 red
+       #  rdis detector.pulse.pmt1000 red
+       #  rdis detector.pulse.ga250 red
+       #  rdis amplifier.pulse green
+       #  rdis amplifier.pulse.en0 black
+       #  rdis amplifier.pulse.pmt250 green
+       #  rdis amplifier.pulse.pmt1000 green
+        # rdis amplifier.pulse.ga250 green
+       #  rdis flasim.test cyan
+       #  rdis fp37_input.dat black
+         fah fadc.samples blue
+         fah fadc.sampled red
+       #  fah fadc.samples.phase0d9 forest
+       #  fah fadc.samples.phase0d95 red
+       #  fah fadc.samples.phase0d99 blue
+       #  fah fadc.samples.coarse red
+       #  fah fadc.samples.pmt250 blue
+       #  fah fadc.samples.pmt1000 blue
+        # fah fadc.samples.ga250 blue
+        # fah fadc.samples.ph0d75 red
+        # fah fadc.samples.ph1d0 blue
+        # fah fadc.samples.ph1d25 forest
+        # fah fadc.samples.ph1d5 magenta
+        # fah fadc.samples.ph1d375 black
+        # rdis fp37_samples.dat black
+       #  rdis fadc.inter forest
+       #  rdis fadc.inter.pmt250 black
+       #  rdis fadc.inter.pmt1000 black
+       #  rdis2 fadc.inter black
+       #  rdis2 fadc.inter.ph0d75 red
+       #  rdis2 fadc.inter.ph0d75.herin.bias0d9 red
+       #  rdis2 fadc.inter.ph0d75.herin torquoise
+       #  rdis2 fadc.inter.ph1d0 blue
+       #  rdis2 fadc.inter.ph1d0.herin.bias0d9 blue 
+       #  rdis2 fadc.inter.ph1d25 forest
+       #  rdis2 fadc.inter.ph1d25.herin.bias0d9 forest
+       #  rdis2 fadc.inter.ph1d5 magenta
+       #  rdis2 fadc.inter.ph1d5.herin.bias0d9 magenta
+       #  rdis2 fadc.inter.ph1d5.porin violet
+       #  rdis2 fadc.inter.parin torquoise
+       #  rdis2 fadc.inter.herin orange
+       #  rdis2 fadc.inter.porin red
+       #  rdis2 fadc.inter.curin forest
+         rdis fadc.aver magenta
+       #  rdis fadc.aver.en0 blue
+       #  rdis fadc.aver.pmt250 magenta
+       #  rdis fadc.aver.pmt1000 magenta
+       #  rdis fadc.aver.ga250 magenta
+        # rdis2 fadc.aver black
+        # rdis fadc.aver.ph1d0 blue
+        # rdis fadc.aver.ph0d75 red
+        # rdis fadc.aver.ph1d25 forest
+        # rdis fadc.aver.ph1d5 magenta
+        # rdis fadc.aver.ph1d375 black
+       #  rdis fp37_averaged.dat black
+       #  rdis fadc.averin green
+       #  rdis2 fadc.averin green
+       #  rdis flasim.dist orange
+       #   rdis fadc.dave cyan
+       #   rdis2 fadc.dave black
+       #   rdis2 fadc.dave.ph1d0 blue
+       #   rdis2 fadc.dave.ph0d75 red
+       #   rdis2 fadc.dave.ph1d25 forest
+       #   rdis2 fadc.dave.ph1d5 magenta
+       #   rdis2 fadc.dave.simple orange
+        #  rdis2 fadc.dave.curin1 cyan
+        #  rdis2 fadc.dave.parin torquoise 
+       #   rdis2 fadc.dave.herin orange
+       #   rdis2 fadc.dave.porin red
+       #   rdis2 fadc.dave.curin forest
+       #  rdis fadc.daves cyan
+         rdis fadc.daver orange
+       #  rdis fadc.daver.pufi green
+       #  rdis fadc.daver.ph1d0 blue
+       #  rdis fadc.daver.ph0d75 red
+       #  rdis fadc.daver.ph1d25 forest
+       #  rdis fadc.daver.ph1d5 magenta
+       #  rdis fadc.daver.ph1d375 black
+       #  rdis fadc.daver.pmt250 orange
+       #  rdis fadc.daver.pmt1000 orange
+       # rdis fadc.daver.ga250 orange
+       #  rdis fadc.daver orange
+       #  rdis fadc.daver.phase0d9 forest
+       #  rdis fadc.daver.phase0d95 red
+       #  rdis fadc.daver.phase0d99 blue
+       ##  rdis2 fadc.daver violet
+        ## hga 98.5 170.76 114.5 14 22 red
+        ## hgd 98.5 2300 114.5 14 22 red
+        # rdis fadc.davesa magenta
+         rdis fadc.deco torquoise
+        # rdis fadc.deco.phase0d9 forest
+        # rdis fadc.deco.phase0d95 red
+        # rdis fadc.deco.phase0d99 blue
+       #  rdis fadc.deco.ph1d0 blue
+       #  rdis fadc.deco.ph0d75 red
+       #  rdis fadc.deco.ph1d25 forest
+       #  rdis fadc.deco.ph1d5 magenta
+       #  rdis fadc.deco.ph1d375 black
+        # rdis fadc.deco.pmt250 torquoise
+        # rdis fadc.deco.pmt1000 torquoise
+        # rdis fadc.deco.ga250 torquoise
+        # rdis fp37_deconvolved.dat black
+        # rdis fp37_shaped.dat black
+        rdis fadc.shaped forest
+       # rdis fadc.shaped.phase0d9 forest
+       # rdis fadc.shaped.phase0d95 red
+       # rdis fadc.shaped.phase0d99 blue
+       # rdit fadc.shaped.gapd12516 forest 186
+        # rdis fadc.shaped.pmt250 yellow
+        # rdis fadc.shaped.pmt1000 yellow
+        # rdis fadc.shaped.ga250 yellow
+        # rdis fadc.shapin black
+        # rdis oshape.dat blue
+         relocate 800 0
+         ltype 2
+         draw 1300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+       #  putlabel 4 signal
+         relocate (29000 29600)
+         ctype green
+       #  putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+       #  putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 27800)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 27200)
+        # ctype orange
+         ctype yellow
+       #  putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+       #  putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+       #  putlabel 4 averaged derivative
+        # putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 Amplitude (ADC counts)
+         angle 0
+       #  bd 102 104 0.1 0.2 0 3 0.2 1
+       #  bd 90 170 10 20 -1 3 0.2 1
+       #  rdis2 fadc.inter.1 black
+       #  set dimen(ss) = 9999
+       #  set dimen(dpi) = 9999
+       #  do i = 1, 9999 {
+       #    set ss[$i-1] = s[$i]
+       #    set dpi[$i-1] = p[$i]-p[$i-1]
+       #  }
+       #  ctype red
+       #  connect ss dpi
+       #  rdis2 fadc.inter black
+       #  set dimen(ss) = 99399
+       #  set dimen(dpi) = 99399
+       #  do i = 1, 99399 {
+       #    set ss[$i-1] = s[$i]
+       #    set dpi[$i-1] = p[$i]-p[$i-1]
+       #  }
+       #  ctype blue
+       #  connect ss dpi
+       #  rdis2 fadc.aver black
+       #  set dimen(ss) = 9999
+       #  set dimen(dp) = 9999
+       #  do i = 1, 9999 {
+       #    set ss[$i-1] = s[$i]
+       #    set dp[$i-1] = p[$i]-p[$i-1]
+       #  }
+       #  ctype red
+       #  connect ss dp
+       #  rdis2 fadc.aver.1 black
+       #  set dimen(ss) = 9999
+       #  set dimen(dp) = 9999
+       #  do i = 1, 9999 {
+       #    set ss[$i-1] = s[$i]
+       #    set dp[$i-1] = p[$i]-p[$i-1]
+       #  }
+       #  ctype red
+       #  connect ss dp
+         ctype black  
+         relocate 99.3 0
+        # draw 99.3 70
+         #draw 100.7 70
+         relocate 100.7 70
+         #draw 100.7 0
+         ctype black
+         dev X11
+
+p13      dev postportfile phase6.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 90 190 10 20 -70 270 25 50
+         sph cherenkov.photons black
+         rdis detector_gapd.pulse black
+         rdis amplifier_gapd_250.pulse black
+         fah fadc_gapd_250_ph0d0.deco blue
+         fah fadc_gapd_250_ph0d1.deco red
+         fah fadc_gapd_250_ph0d2.deco forest
+         fah fadc_gapd_250_ph0d3.deco magenta
+         fah fadc_gapd_250_ph0d4.deco orange
+         fah fadc_gapd_250_ph0d5.deco cyan
+         fah fadc_gapd_250_ph0d6.deco red
+         fah fadc_gapd_250_ph0d7.deco forest
+         fah fadc_gapd_250_ph0d8.deco magenta
+         fah fadc_gapd_250_ph0d9.deco orange
+        # fah fadc_pmt_250_phm7d0.samples cyan
+        # fah fadc_pmt_250_phm0d8.samples forest
+        # fah fadc_pmt_250_phm0d6.samples magenta
+         ctype black
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         bd 90 190 10 20 -70 270 25 50
+         sph cherenkov.photons black
+         rdis detector_gapd.pulse black
+         rdis amplifier_gapd_250.pulse black
+         rdis fadc_gapd_250_ph0d0.shaped blue
+         rdis fadc_gapd_250_ph0d1.shaped red
+         rdis fadc_gapd_250_ph0d2.shaped forest
+         rdis fadc_gapd_250_ph0d3.shaped magenta
+         rdis fadc_gapd_250_ph0d4.shaped orange
+         rdis fadc_gapd_250_ph0d5.shaped cyan
+         rdis fadc_gapd_250_ph0d6.shaped red
+         rdis fadc_gapd_250_ph0d7.shaped forest
+         rdis fadc_gapd_250_ph0d8.shaped magenta
+         rdis fadc_gapd_250_ph0d9.shaped orange
+        # rdis fadc_pmt_250_phm7d0.daver cyan
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         relocate (29000 29600)
+         ctype green
+       #  putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+       #  putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype orange
+       #  putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+
+p12      dev postportfile phase5.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 90 190 10 20 -70 270 50 100
+         sph cherenkov.photons black
+         rdis detector_gapd.pulse black
+         rdis amplifier_gapd_250.pulse black
+         fah fadc_gapd_250_ph0d0.samples blue
+         fah fadc_gapd_250_ph0d1.samples red
+         fah fadc_gapd_250_ph0d2.samples forest
+         fah fadc_gapd_250_ph0d3.samples magenta
+         fah fadc_gapd_250_ph0d4.samples orange
+         fah fadc_gapd_250_ph0d5.samples cyan
+         fah fadc_gapd_250_ph0d6.samples red
+         fah fadc_gapd_250_ph0d7.samples forest
+         fah fadc_gapd_250_ph0d8.samples magenta
+         fah fadc_gapd_250_ph0d9.samples orange
+        # fah fadc_pmt_250_phm7d0.samples cyan
+        # fah fadc_pmt_250_phm0d8.samples forest
+        # fah fadc_pmt_250_phm0d6.samples magenta
+         ctype black
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         bd 90 190 10 20 -120 350 50 100
+         sph cherenkov.photons black
+         rdis detector_gapd.pulse black
+         rdis amplifier_gapd_250.pulse black
+         rdis fadc_gapd_250_ph0d0.daver blue
+         rdis fadc_gapd_250_ph0d1.daver red
+         rdis fadc_gapd_250_ph0d2.daver forest
+         rdis fadc_gapd_250_ph0d3.daver magenta
+         rdis fadc_gapd_250_ph0d4.daver orange
+         rdis fadc_gapd_250_ph0d5.daver cyan
+         rdis fadc_gapd_250_ph0d6.daver red
+         rdis fadc_gapd_250_ph0d7.daver forest
+         rdis fadc_gapd_250_ph0d8.daver magenta
+         rdis fadc_gapd_250_ph0d9.daver orange
+        # rdis fadc_pmt_250_phm7d0.daver cyan
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         relocate (29000 29600)
+         ctype green
+       #  putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+       #  putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype orange
+       #  putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+
+p11      dev postportfile phase4.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 90 125 5 10 -70 220 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+         fah fadc_pmt_1000_ph0d0.deco blue
+         fah fadc_pmt_1000_ph0d1.deco red
+         fah fadc_pmt_1000_ph0d2.deco forest
+         fah fadc_pmt_1000_ph0d3.deco magenta
+         fah fadc_pmt_1000_ph0d4.deco orange
+         fah fadc_pmt_1000_ph0d5.deco cyan
+         fah fadc_pmt_1000_ph0d6.deco red
+         fah fadc_pmt_1000_ph0d7.deco forest
+         fah fadc_pmt_1000_ph0d8.deco magenta
+         fah fadc_pmt_1000_ph0d9.deco orange
+        # fah fadc_pmt_250_phm7d0.samples cyan
+        # fah fadc_pmt_250_phm0d8.samples forest
+        # fah fadc_pmt_250_phm0d6.samples magenta
+         ctype black
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         bd 90 125 5 10 -70 220 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+         rdis fadc_pmt_1000_ph0d0.shaped blue
+         rdis fadc_pmt_1000_ph0d1.shaped red
+         rdis fadc_pmt_1000_ph0d2.shaped forest
+         rdis fadc_pmt_1000_ph0d3.shaped magenta
+         rdis fadc_pmt_1000_ph0d4.shaped orange
+         rdis fadc_pmt_1000_ph0d5.shaped cyan
+         rdis fadc_pmt_1000_ph0d6.shaped red
+         rdis fadc_pmt_1000_ph0d7.shaped forest
+         rdis fadc_pmt_1000_ph0d8.shaped magenta
+         rdis fadc_pmt_1000_ph0d9.shaped orange
+        # rdis fadc_pmt_250_phm7d0.daver cyan
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         relocate (29000 29600)
+         ctype green
+       #  putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+       #  putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype orange
+       #  putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+
+p10      dev postportfile phase3.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 90 125 5 10 -70 170 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+         fah fadc_pmt_1000_ph0d0.samples blue
+         fah fadc_pmt_1000_ph0d1.samples red
+         fah fadc_pmt_1000_ph0d2.samples forest
+         fah fadc_pmt_1000_ph0d3.samples magenta
+         fah fadc_pmt_1000_ph0d4.samples orange
+         fah fadc_pmt_1000_ph0d5.samples cyan
+         fah fadc_pmt_1000_ph0d6.samples red
+         fah fadc_pmt_1000_ph0d7.samples forest
+         fah fadc_pmt_1000_ph0d8.samples magenta
+         fah fadc_pmt_1000_ph0d9.samples orange
+        # fah fadc_pmt_250_phm7d0.samples cyan
+        # fah fadc_pmt_250_phm0d8.samples forest
+        # fah fadc_pmt_250_phm0d6.samples magenta
+         ctype black
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         bd 90 125 5 10 -70 170 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+         rdis fadc_pmt_1000_ph0d0.daver blue
+         rdis fadc_pmt_1000_ph0d1.daver red
+         rdis fadc_pmt_1000_ph0d2.daver forest
+         rdis fadc_pmt_1000_ph0d3.daver magenta
+         rdis fadc_pmt_1000_ph0d4.daver orange
+         rdis fadc_pmt_1000_ph0d5.daver cyan
+         rdis fadc_pmt_1000_ph0d6.daver red
+         rdis fadc_pmt_1000_ph0d7.daver forest
+         rdis fadc_pmt_1000_ph0d8.daver magenta
+         rdis fadc_pmt_1000_ph0d9.daver orange
+        # rdis fadc_pmt_250_phm7d0.daver cyan
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         relocate (29000 29600)
+         ctype green
+       #  putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+       #  putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype orange
+       #  putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+
+p9       dev postportfile phase2.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 90 125 5 10 -70 170 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+         fah fadc_pmt_250_phm3d0.deco blue
+         fah fadc_pmt_250_phm3d4.deco red
+         fah fadc_pmt_250_phm3d8.deco forest
+         fah fadc_pmt_250_phm4d2.deco magenta
+         fah fadc_pmt_250_phm4d6.deco orange
+         fah fadc_pmt_250_phm5d0.deco cyan
+         fah fadc_pmt_250_phm5d4.deco red
+         fah fadc_pmt_250_phm5d8.deco forest
+         fah fadc_pmt_250_phm6d2.deco magenta
+         fah fadc_pmt_250_phm6d6.deco orange
+        # fah fadc_pmt_250_phm7d0.samples cyan
+        # fah fadc_pmt_250_phm0d8.samples forest
+        # fah fadc_pmt_250_phm0d6.samples magenta
+        # fah fadc.samples green
+       #  rdis fadc_pmt_250_phm2d0.daver magenta
+       #  rdis fadc_pmt_250_phm2d0.deco torquoise
+       #  rdis fadc_pmt_250_phm2d0.shaped orange
+         ctype black
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         bd 90 125 5 10 -70 170 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+        # fah fadc_pmt_250_phm2d0.samples blue
+        # fah fadc.samples blue
+         rdis fadc_pmt_250_phm3d0.shaped blue
+         rdis fadc_pmt_250_phm3d4.shaped red
+         rdis fadc_pmt_250_phm3d8.shaped forest
+         rdis fadc_pmt_250_phm4d2.shaped magenta
+         rdis fadc_pmt_250_phm4d6.shaped orange
+         rdis fadc_pmt_250_phm5d0.shaped cyan
+         rdis fadc_pmt_250_phm5d4.shaped red
+         rdis fadc_pmt_250_phm5d8.shaped forest
+         rdis fadc_pmt_250_phm6d2.shaped magenta
+         rdis fadc_pmt_250_phm6d6.shaped orange
+        # rdis fadc_pmt_250_phm7d0.daver cyan
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         relocate (29000 29600)
+         ctype green
+       #  putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+       #  putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype orange
+       #  putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+
+p8       dev postportfile phase1.ps
+         macro read colors.sm
+         colors
+	 lweight 1.5
+	 expand 0.85
+         bo 90 125 5 10 -70 170 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+         fah fadc_pmt_250_phm3d0.samples blue
+         fah fadc_pmt_250_phm3d4.samples red
+         fah fadc_pmt_250_phm3d8.samples forest
+         fah fadc_pmt_250_phm4d2.samples magenta
+         fah fadc_pmt_250_phm4d6.samples orange
+         fah fadc_pmt_250_phm5d0.samples cyan
+         fah fadc_pmt_250_phm5d4.samples red
+         fah fadc_pmt_250_phm5d8.samples forest
+         fah fadc_pmt_250_phm6d2.samples magenta
+         fah fadc_pmt_250_phm6d6.samples orange
+        # fah fadc_pmt_250_phm7d0.samples cyan
+        # fah fadc_pmt_250_phm0d8.samples forest
+        # fah fadc_pmt_250_phm0d6.samples magenta
+        # fah fadc.samples green
+       #  rdis fadc_pmt_250_phm2d0.daver magenta
+       #  rdis fadc_pmt_250_phm2d0.deco torquoise
+       #  rdis fadc_pmt_250_phm2d0.shaped orange
+         ctype black
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         bd 90 125 5 10 -70 170 25 50
+         sph cherenkov.photons black
+         rdis detector_pmt.pulse black
+         rdis amplifier_pmt_250.pulse black
+        # fah fadc_pmt_250_phm2d0.samples blue
+        # fah fadc.samples blue
+         rdis fadc_pmt_250_phm3d0.daver blue
+         rdis fadc_pmt_250_phm3d4.daver red
+         rdis fadc_pmt_250_phm3d8.daver forest
+         rdis fadc_pmt_250_phm4d2.daver magenta
+         rdis fadc_pmt_250_phm4d6.daver orange
+         rdis fadc_pmt_250_phm5d0.daver cyan
+         rdis fadc_pmt_250_phm5d4.daver red
+         rdis fadc_pmt_250_phm5d8.daver forest
+         rdis fadc_pmt_250_phm6d2.daver magenta
+         rdis fadc_pmt_250_phm6d6.daver orange
+        # rdis fadc_pmt_250_phm7d0.daver cyan
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype red
+       #  putlabel 4 signal (08.10.2012)
+         relocate (29000 29600)
+         ctype green
+       #  putlabel 4 adc input
+         relocate (29000 29000)
+         ctype blue
+       #  putlabel 4 adc samples
+         relocate (29000 28400)
+         ctype magenta
+       #  putlabel 4 adc samples averaged
+         relocate (29000 28400)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 27800)
+         ctype orange
+       #  putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+       #  putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 ADC counts
+         angle 0
+         ctype black
+         dev X11
+
+p7       dev postportfile flasim6.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+         bo -0.5 0.5 0.1 0.2 -0.05 1.1 0.1 0.2
+      #   hit octave.test blue
+         hit white.noise blue
+         bd 68 172 10 20 -0.7 0.7 0.1 0.2
+       #  bd 98 102 0.5 1 -0.7 0.7 0.1 0.2
+         data white.noise
+         read {tno 1 ano 2}
+         ctype blue
+         connect tno ano
+         ctype black
+         dev X11
+
+p6       dev postportfile flasim5.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+         bol1 90 140 5 20 -70 310 50 100
+         rdis fp38_signal.dat cyan
+         rdis detector.pulse blue
+         rdis fp38_input.dat green
+         rdis amplifier.pulse forest
+         bol2 90 139.99 5 20 -70 310 50 100
+         fah fp38_samples.dat cyan
+         fah fadc.samples blue
+         rdis fp38_averaged.dat green
+         rdis fadc.averin forest
+         bor1 90 140 5 20 -70 310 50 100
+         rdin fp51_signal.dat cyan 0.38 -86
+         rdis fadc.daver blue
+         bor2 90 139.99 5 20 -70 310 50 100
+         rdis fp38_deconvolved.dat cyan
+         rdis fadc.deco blue
+         rdis fp38_shaped.dat green
+         rdis fadc.shaped forest
+         relocate 90 0
+         ltype 2
+         draw 140 0
+         ltype 0
+         expand 0.65
+         relocate (16000 30200)
+         ctype blue
+         putlabel 4 signal
+         relocate (16000 29600)
+         ctype cyan
+         putlabel 4 FC signal
+         relocate (16000 28800)
+         ctype forest
+         putlabel 4 adc input
+         relocate (16000 28200)
+         ctype green
+         putlabel 4 FC adc input
+         relocate (16000 23000)          
+         ctype blue
+         putlabel 4 samples
+         relocate (16000 22400)
+         ctype cyan
+         putlabel 4 FC samples
+         relocate (16000 21600)
+         ctype forest
+         putlabel 4 averaged
+         relocate (16000 21000)
+         ctype green
+         putlabel 4 FC averaged
+         relocate (29000 30200)
+         ctype blue
+         putlabel 4 bipolar
+         relocate (29000 29600)
+         ctype cyan
+         putlabel 4 FC bipolar (30 p.e.)
+         relocate (29000 23000)
+         ctype blue
+         putlabel 4 deconvolved
+         relocate (29000 22400)
+         ctype cyan
+         putlabel 4 FC deconvolved
+         relocate (29000 21600)
+         ctype forest
+         putlabel 4 shaped
+         relocate (29000 21000)
+         ctype green
+         putlabel 4 FC shaped
+         ctype black
+	 expand 0.75
+	 relocate (16700 15800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 23800)
+	 putlabel 5 ADC counts)
+         angle 0
+         dev X11
+
+  #p5       dev postportfile flasim4.ps
+p5    #   dev postportfile flasimpmt250.ps
+         dev postportfile flasimpmt1000.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bol1 80 140 5 20 -25 310 50 100
+         bol1 80 140 5 20 -10 155 25 50
+        # rdis fp37_signal.dat red
+        # rdis detector.pulse.pmt250 blue
+         rdis fp38_signal.dat red
+         rdis detector.pulse.pmt1000 blue
+         bol2 80 140 5 20 -10 155 25 50
+        # rdis fp37_input.dat red
+        # rdis amplifier.pulse.pmt250 blue
+         rdis fp38_input.dat red
+         rdis amplifier.pulse.pmt1000 blue
+         bol3 80 139.99 5 20 -10 155 25 50
+        # fah fp37_samples.dat red
+        # fah fadc.samples.pmt250 blue
+         fah fp38_samples.dat red
+         fah fadc.samples.pmt1000 blue
+         bor1 80 140 5 20 -10 155 25 50
+        # rdis fp37_averaged.dat red
+        # rdis fadc.aver.pmt250 blue
+         rdis fp38_averaged.dat red
+         rdis fadc.aver.pmt1000 blue
+       #  rdin fp51_signal.dat cyan 0.38 -86
+       #  rdis fadc.daver blue
+         bor2 80 140 5 20 -10 155 25 50
+       #  rdis fp37_deconvolved.dat red
+       #  rdis fadc.deco.pmt250 blue
+         rdis fp38_deconvolved.dat red
+         rdis fadc.deco.pmt1000 blue
+         bor3 80 139.99 5 20 -10 155 25 50
+       #  rdis fp37_shaped.dat red
+       #  rdis fadc.shaped.pmt250 blue
+         rdis fp38_shaped.dat red
+         rdis fadc.shaped.pmt1000 blue
+         relocate 90 0
+         ltype 2
+       #  draw 140 0
+         ltype 0
+         expand 0.65
+         relocate (16000 30200)
+         ctype black
+         putlabel 4 PMT signal
+         relocate (29000 28600)
+         ctype red
+         putlabel 4 FlashCam report
+         relocate (29000 28000)
+         ctype blue
+         putlabel 4 Simulation model
+         relocate (16000 23200)
+         ctype black
+         putlabel 4 ADC input
+         relocate (16000 16200)          
+         putlabel 4 ADC samples
+         relocate (29000 30200)
+         putlabel 4 samples averaged
+         relocate (29000 23200)
+         putlabel 4 deconvolved
+         relocate (29000 16200)
+         putlabel 4 shaped
+         relocate (29000 30200)
+      #   putlabel 4 bipolar
+         relocate (29000 29600)
+      #   putlabel 4 FC bipolar (30 p.e.)
+         relocate (29000 23000)
+      #   putlabel 4 deconvolved
+         relocate (29000 22400)
+      #   putlabel 4 FC deconvolved
+         relocate (29000 21600)
+      #   putlabel 4 shaped
+         relocate (29000 21000)
+      #   putlabel 4 FC shaped
+         ctype black
+	 expand 0.75
+	 relocate (17100 8700)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1600 20500)
+	 putlabel 5 Amplitude (ADC counts)
+         angle 0
+         dev X11
+ 
+p4       dev postportfile flasim3.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo 99 111 1 2 -0.02 1.05 0.1 0.2
+        # bo -2.1 2.1 0.2 1 99 111 1 2
+         #data flaszka10.dis
+         #read {ra 2 ta 3}
+         #set dta = ta - 72
+         ctype blue
+         ptype 20 3
+         expand 0.5
+         #points dta ra
+         bo -0.1 4.1 0.2 1 0.97 1.04 0.01 0.02
+         data flaszka.dis
+         read {ta 2 ra 3}
+         set ran = ra/74
+         set dta = ta - 72
+         ctype red
+         ptype 20 3
+         expand 0.5
+         points ta ran
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 t_{ADC}-t_{0} [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 S_{S} [ADC counts]
+         angle 0
+         dev X11
+ 
+p3       dev postportfile flasim2.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+        # bo 99 111 1 2 -0.02 1.05 0.1 0.2
+         bo1 71.5 77 0.5 1 -0.02 1.05 0.1 0.2
+         mahi flaszka.dis 3 72 0.05 blue
+         bo2 110 160 2 10 -0.02 1.05 0.1 0.2
+         mahi flaszka.dis 5 122 0.3 red
+         bo3 670 920 25 50 -0.02 1.05 0.1 0.2
+         mahi flaszka.dis 6 710 2 forest
+      #   bo1 9 11 0.2 1 -0.02 1.05 0.1 0.2
+      #   mahi flaszka.dis 7 9 0.02 blue
+      #   bo2 7 13 0.5 1 -0.02 1.05 0.1 0.2
+      #   mahi flaszka.dis 8 7 0.1 red
+      #   bo3 7 13 0.5 1 -0.02 1.05 0.1 0.2
+      #   mahi flaszka.dis 9 7 0.1 forest
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	# putlabel 5 S_{S} [ADC counts]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 N(S_{S})
+         angle 0
+         dev X11
+ 
+
+p2   #    dev postportfile flasimpulses.ps
+         dev postportfile gapdsignal.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+	 expand 0.85
+	# bo 95 145 5 10 -70 140 10 20
+        # bo 140 200 10 20 -100 100 10 50
+        # bo 0 300 25 50 -50 320 50 100
+       # bo 105 117 1 2 155 200 2 10
+         bo 90 190 5 20 -20 200 10 50 
+       #  sph cherenkov.photons black
+       #  sph nsb.photons red
+       #  phs detector.signals blue
+       #  rdis fp37_signal.dat red
+       #  rdis detector.pulseph250 red
+       #  rdis detector.pulsega250 blue
+       #  rdis amplifier.pulseph250 forest
+         rdis amplifier.pulsega250 torquoise
+       #  rdis flasim.test cyan
+       #  rdis fp37_input.dat red
+       # fah fadc.samplesga250 blue
+       #  rdis fp37_samples.dat red
+       #  rdis fadc.inter cyan
+       #  rdis2 fadc.inter yellow
+       #  rdis fadc.aver orange
+         rdis fp37_averaged.dat magenta
+       #  rdis fadc.averinph250 orange
+       #  rdis2 fadc.averin green
+       #  rdis flasim.dist orange
+       #  rdis fadc.dave blue
+        # rdis2 fadc.dave green
+        # rdis fadc.daves cyan
+        # rdis fadc.daverph250 magenta
+        # rdis fadc.davesa magenta
+        # rdis fadc.decoph250 torquoise
+        # rdis fp37_deconvolved.dat red 
+        # rdis fp37_shaped.dat red
+      ##   rdis fadc.shaped black
+        # rdis fadc.shapedph250 black
+        # rdis oshape.dat blue
+         data pulse_MPPC.dat
+         read crp 1
+         set crpp = 36*crp
+         set crx = 100,199.5,0.5
+         ptype 20 0
+         expand 0.6
+        # points crx crpp
+         connect crx crpp
+         data recon_agh.dat
+         read {tag 1 aag 2}
+         set ttag = tag + 84
+         set amag = 190*aag
+         ctype red
+         connect ttag amag
+         hgn 95 183 111.0 6.6 5 blue 111
+         hga 111 183 111.0 6.8 28.9 blue
+       #  rno 95 183 111 4.8 blue
+         ctype black
+         data pulse_FlashCam_raw.dat
+         lines 4 45
+         read {tpf 1 apf 2}
+         set tipf = tpf + 95
+         set apif = apf*0.35 
+         ctype forest
+        # points tipf apf
+         connect tipf apif
+         ctype black
+         data fithygauss.dat
+         read {xhn 1 yhn 2}
+       #  connect xhn yhn
+         relocate 0 0
+         ltype 2
+         draw 300 0
+         ltype 0
+         expand 0.65
+         relocate (29000 30200)
+         ctype black
+        # putlabel 4 Cherenkov photons
+         putlabel 4 pulse\_MPPC.dat
+         relocate (29000 29600)
+         ctype red
+       #  putlabel 4 PMT signal and ADC input
+         putlabel 4 reconstructed (PK)
+       #  putlabel 4 GAPD signal
+         relocate (29000 29000)
+         ctype forest
+       #  ctype blue
+        # putlabel 4 GAPD signal and ADC input
+        # putlabel 4 ADC input
+         putlabel 4 pulse\_FlashCam\_raw.dat
+         ctype red
+        # putlabel 4 shaped (FC)
+         relocate (29000 28400)
+         ctype torquoise
+        # putlabel 4 ADC samples
+         putlabel 4 averaged (PL)
+         relocate (29000 27800)
+         ctype blue
+       #  putlabel 4 ADC samples averaged
+         putlabel 4 reconstructed model (PK,PL)
+         relocate (29000 27200)
+         ctype magenta
+      #   putlabel 4 averaged derivative
+         relocate (29000 26600)
+         ctype torquoise
+       #  putlabel 4 deconvolved
+         relocate (29000 26000)
+         ctype black
+      #   putlabel 4 shaped
+         relocate (29000 27200)
+         ctype black
+      #   putlabel 4 pulse\_MPPC.dat
+         relocate (29000 26600)
+         ctype black
+      #   putlabel 4 photons arrival time
+         relocate (29000 26000)
+         ctype orange
+      #   putlabel 4 averaged derivative (bipolar, timing)
+         ctype black
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	# putlabel 5 ADC counts
+         putlabel 5 Amplitude
+         angle 0
+      #   bd 99 111 1 2 -0.02 1.05 0.1 0.2
+      #   bd 69.9 74.1 0.2 1 -0.02 1.05 0.1 0.2
+      #   mah flaszka10.dis blue
+      #   bd 95 135 2 10 -5 5 1 2
+      #   dedis fadc.averin blue
+      #   bd 95 105 1 2 -5 100 5 20
+         define ganor (1/(sqrt(2*3.14159)*0.4))
+         set xga = 95, 105, 0.001
+         set yga = 70*exp(-(xga-100)*(xga-100)/(2*0.4*0.4))
+         set zga = (xga-100)*(xga-100)*yga
+         define grms (sqrt(SUM(zga)/sum(yga)))
+         # define bw 0.4
+         define bw 0.6
+         define bw 0.7
+         # define sw 0.2014
+         define sw 0.07
+         define sw 0.000001
+         set dimen(ybo) = dimen(xga)
+         set dimen(zbo) = dimen(xga)
+         do i = 0, dimen(xga)-1 {
+           set ybo[$i] = 0
+           if (xga[$i] <= 100-$bw) {
+             set ybo[$i] = 70*exp(-(xga[$i]-100+$bw)*(xga[$i]-100+$bw)/(2*$sw*$sw))
+           }
+           if (xga[$i] > 100-$bw && xga[$i] < 100+$bw) {
+             set ybo[$i] = 70
+           }
+           if (xga[$i] >= 100+$bw) {
+             set ybo[$i] = 70*exp(-(xga[$i]-100-$bw)*(xga[$i]-100-$bw)/(2*$sw*$sw))
+           }
+         }
+         set zbo = (xga-100)*(xga-100)*ybo
+         define brms (sqrt(SUM(zbo)/sum(ybo)))
+         ctype forest
+       #  connect xga ybo    
+         #write standard RMS $grms $brms
+         ctype red
+       #  connect xga yga
+         ctype blue
+         relocate 99.3 0
+        # draw 99.3 70
+         #draw 100.7 70
+         relocate 100.7 70
+         #draw 100.7 0
+         ctype black
+         dev X11
+
+p1       dev postportfile sishapes1.ps
+         macro read colors.sm
+         colors
+	 lweight 2
+	 expand 0.85
+	# bo 90 140 2 10 -75 310 25 50
+         bo 90 210 5 20 -50 155 25 50
+        # bo 97 117 2 10 -3 53 10 20
+        # rdis fp38_signal.dat black
+        # rdis oshape.dat red
+        # rdis fp38_input.dat black 
+        # rdis pcoshape.dat forest   
+        # rdis fp38_averaged.dat black
+        # rdis fp38_samples.dat black
+        # rdis fp38_deconvolved.dat black
+        # rdis fp38_shaped.dat black     
+        # rdis prshape.dat green
+        # rdis foshape.dat magenta
+        # rdis odshape.dat pink
+        # rdis ofshape.dat green
+        # rdis oishape.dat blue
+         rdis fp37_signal.dat black
+         rdis fp37_input.dat red
+        # rdis fp50_10pe.dat cyan
+        # rdis fp37_averaged.dat black
+        # rdis aveshape.dat red
+        # rdis davshape.dat orange
+        # rdis dfishape.dat magenta
+        # rdis fp37_deconvolved.dat torquoise
+        # rdis decoshape.dat forest
+        # rdis fp37_shaped.dat orange
+        # rdis fp37_samples.dat cyan
+        # rdis pashape.dat pink
+        # rdis proshape.dat blue
+        # rdis pcoshape.dat blue
+        # rdis pdecoshape.dat blue
+        # rdisn fitbrandt.dat forest 1
+        # gau 9 3 1
+       #  hga 96 77.69 104.16 4.3569 8.8361 green
+       #  hga 96 77.024 108.47 5.3852 0 violet
+        # rdis fithygauss.dat forest
+         data pulse_MPPC.dat
+         read crp 1
+         set crpp = 10*crp
+         set crx = 100,199.5,0.5
+         ptype 20 0
+         expand 0.6
+         points crx crpp
+         set cry = 4*13.329*(1-exp(-(crx-100)/1.12))*exp(-(crx-100)/25.33)
+         set crz = 6.7*13.329*(1-exp(-(crx-100)/5.4))*exp(-(crx-100)/25.2)
+         ctype cyan
+         connect crx cry 
+         ctype pink
+         connect crx crz
+         hga 99.5 50.703 109.06 10.584 23.007 green       
+         data pulse_CTA.dat
+         read ctp 1
+         set ctx = 100,110.5,0.5
+         ctype orange
+         points ctx ctp
+        # At least up to 100 p.e. the averaged signals have the same shape
+         data fp50_10pe.dat
+         read {xv 1 yv 2}
+         set xvv = xv+80
+         set yvv = yv*4.5
+         ctype cyan
+        # connect xvv yvv
+         data fp50_30pe.dat
+         read {xv 1 yv 2}
+         set xvv = xv+80
+         set yvv = 4*yv/3
+         ctype orange
+        # connect xvv yvv
+         data fp50_100pe.dat
+         read {xv 1 yv 2}
+         set xvv = xv+80
+         set yvv = 4*yv/10
+         ctype green
+        # connect xvv yvv
+         ctype black 
+         ltype 2
+         relocate 80 0
+         draw 210 0
+         ltype 0
+	 expand 0.75
+	 relocate (16700 16800)
+	 putlabel 5 Time [ns]
+	 angle 90
+	 relocate (1700 26000)
+	 putlabel 5 ADC counts
+      #   bd 95 140 5 10 -12 4 -1 10
+      #   ldis prashape.dat magenta
+      #   trx 1E-11 100 1.15
+         bd -10 30 5 10 -1 15 2.5 5
+        # cdis codeshape.dat blue red magenta
+         rdis conshape.dat magenta
+         rdis flasim.test green
+         #rdis decshape.dat red
+         
+ 	 angle 0
+	 dev X11
+
+sph 2    data $1
+         read {tp 1}
+        # set tp1 = tp-0.1
+        # set tp2 = tp+0.1
+        # set tap = 50 + 0.00000001*tp
+         lweight 4
+         do i = 0, dimen(tp)-1 {
+           define xpo (tp[$i])
+         #  define xpo1 (tp1[$i])
+         #  define xpo2 (tp2[$i])
+         #  define ypo (tap[$i])
+           ctype $2
+         #  relocate $xpo1 0
+         #  draw $xpo $ypo
+         #  draw $xpo2 0
+           relocate $xpo 0
+           draw $xpo 5
+         }
+         lweight 2
+         ctype black
+
+phs 2    data $1
+         read {ts 2 is 3}
+         do i = 0, dimen(ts)-1 {
+           define x0 (ts[$i])
+           define t0 (ts[$i] + 2.95)
+           define ni (is[$i])
+           hga $x0 $ni $t0 1.4154 0.83725 $2
+         }
+          
+
+mahi 6
+         data $1
+         if ($3 == 3) {read rpo 3}
+         if ($3 == 4) {read rpo 4}
+         if ($3 == 5) {read rpo 5}
+         if ($3 == 6) {read rpo 6}
+         if ($3 == 7) {read rpo 7}
+         if ($3 == 8) {read rpo 8}
+         if ($3 == 9) {read rpo 9}
+         if ($3 == 10) {read rpo 10}
+         if ($3 == 11) {read rpo 11}
+         set rp = rpo/$2
+         define rpmin  100000
+         define rpmax  -100000
+         do i = 0, dimen(rp)-1 {
+           if (rp[$i] < $rpmin) {define rpmin (rp[$i])}
+           if (rp[$i] > $rpmax) {define rpmax (rp[$i])}
+         }
+         write standard limits $rpmin $rpmax
+         set dimen(hr) = 101
+         set dimen(pe) = 101
+         define np (dimen(rp))
+         do i = 0, 100 {
+           set pe[$i] = $4 + $i*$5
+           set hr[$i] = 0
+         }
+         do i = 0, $np-1 {
+           do j = 0, 100 {
+             if (rp[$i] >= pe[$j]-0.5*$5 && rp[$i] < pe[$j]+0.5*$5) {
+               set hr[$j] = hr[$j] + 1
+             }
+           }
+         }
+         define hrmax 0
+         do i = 0, 100 {
+           if (hr[$i] > $hrmax) {define hrmax (hr[$i])}
+         }
+         define hrsum 0
+         define hrsuma 0
+         do i = 0, 100 {
+           set hr[$i] = hr[$i]/$hrmax
+           define hrsum ($hrsum + pe[$i]*hr[$i])
+           define hrsuma ($hrsuma + hr[$i])
+         }
+         define prmean ($hrsum/$hrsuma)
+         define hrsum 0
+         define hrsumka 0
+         do i = 0, 100 {
+           define hrsum ($hrsum + ($prmean-pe[$i])*($prmean-pe[$i])*hr[$i])
+           define hrsumka ($hrsumka + hr[$i])
+           if ($hrsumka < 0.5*$hrsuma) {define prmedian (pe[$i])}
+         }
+         define prsigma (sqrt($hrsum/$hrsuma))
+         write standard mean $prmean $prsigma $prmedian
+        # ctype $5
+         ptype 20 3
+         expand 0.6
+       #  points xp he
+         ctype $6
+         histogram pe hr
+         ctype black
+
+madi 7
+         data $1
+         if ($3 == 3) {read rpo 3}
+         if ($3 == 4) {read rpo 4}
+         if ($3 == 5) {read rpo 5}
+         if ($3 == 6) {read rpo 6}
+         if ($3 == 7) {read rpo 7}
+         if ($3 == 8) {read rpo 8}
+         if ($3 == 9) {read rpo 9}
+         if ($3 == 10) {read rpo 10}
+         if ($3 == 11) {read rpo 11}
+         if ($3 == 12) {read rpo 12}
+         if ($3 == 13) {read rpo 13}
+         if ($3 == 14) {read rpo 14}
+         if ($3 == 15) {read rpo 15}
+         if ($3 == 16) {read rpo 16}
+         if ($3 == 17) {read rpo 17}
+         set rp = (rpo-$7)/$2
+         define rpmin  100000
+         define rpmax  -100000
+         do i = 0, dimen(rp)-1 {
+           if (rp[$i] < $rpmin) {define rpmin (rp[$i])}
+           if (rp[$i] > $rpmax) {define rpmax (rp[$i])}
+         }
+         write standard limits $rpmin $rpmax
+         define nb 100
+         define nb1 ($nb+1)
+         set dimen(hr) = $nb1
+         set dimen(pe) = $nb1
+         define np (dimen(rp))
+         do i = 0, $nb {
+           set pe[$i] = $4 + $i*$5
+           set hr[$i] = 0
+         }
+         do i = 0, $np-1 {
+           do j = 0, $nb {
+             if (rp[$i] >= pe[$j]-0.5*$5 && rp[$i] < pe[$j]+0.5*$5) {
+               set hr[$j] = hr[$j] + 1
+             }
+           }
+         }
+         define hrmax 0
+         do i = 0, $nb {
+           if (hr[$i] > $hrmax) {define hrmax (hr[$i])}
+         }
+         define hrsum 0
+         define hrsuma 0
+         do i = 0, $nb {
+           set hr[$i] = hr[$i]/$hrmax
+           define hrsum ($hrsum + pe[$i]*hr[$i])
+           define hrsuma ($hrsuma + hr[$i])
+         }
+         define prmean ($hrsum/$hrsuma)
+         define hrsum 0
+         define hrsumka 0
+         do i = 0, $nb {
+           define hrsum ($hrsum + ($prmean-pe[$i])*($prmean-pe[$i])*hr[$i])
+           define hrsumka ($hrsumka + hr[$i])
+           if ($hrsumka < 0.5*$hrsuma) {define prmedian (pe[$i])}
+         }
+         define prsigma (sqrt($hrsum/$hrsuma))
+         write standard mean sigma median $prmean $prsigma $prmedian
+        # ctype $5
+         ptype 20 3
+         expand 0.6
+       #  points xp he
+         ctype $6
+         histogram pe hr
+         ctype black
+
+made 7
+         data $1
+         if ($3 == 3) {read rpo 3}
+         if ($3 == 4) {read rpo 4}
+         if ($3 == 5) {read rpo 5}
+         if ($3 == 6) {read rpo 6}
+         if ($3 == 7) {read rpo 7}
+         if ($3 == 8) {read rpo 8}
+         if ($3 == 9) {read rpo 9}
+         if ($3 == 10) {read rpo 10}
+         if ($3 == 11) {read rpo 11}
+         if ($3 == 12) {read rpo 12}
+         if ($3 == 13) {read rpo 13}
+         if ($3 == 14) {read rpo 14}
+         if ($3 == 15) {read rpo 15}
+         if ($3 == 16) {read rpo 16}
+         if ($3 == 17) {read rpo 17}
+         set rp = (rpo-$7)/$2
+         define rpmin  100000
+         define rpmax  -100000
+         do i = 0, dimen(rp)-1 {
+           if (rp[$i] < $rpmin) {define rpmin (rp[$i])}
+           if (rp[$i] > $rpmax) {define rpmax (rp[$i])}
+         }
+         write standard limits $rpmin $rpmax
+         define nb 100
+         define nb1 ($nb+1)
+         set dimen(hr) = $nb1
+         set dimen(pe) = $nb1
+         define np (dimen(rp))
+         do i = 0, $nb {
+           set pe[$i] = $4 + $i*$5
+           set hr[$i] = 0
+         }
+         do i = 0, $np-1 {
+           do j = 0, $nb {
+             if (rp[$i] >= pe[$j]-0.5*$5 && rp[$i] < pe[$j]+0.5*$5) {
+               set hr[$j] = hr[$j] + 1
+             }
+           }
+         }
+         define hrmax 0
+         do i = 0, $nb {
+           if (hr[$i] > $hrmax) {define hrmax (hr[$i])}
+         }
+         define hrsum 0
+         define hrsuma 0
+         do i = 0, $nb {
+           set hr[$i] = hr[$i]/$hrmax
+           define hrsum ($hrsum + pe[$i]*hr[$i])
+           define hrsuma ($hrsuma + hr[$i])
+         }
+         define prmean ($hrsum/$hrsuma)
+         define hrsum 0
+         define hrsumka 0
+         do i = 0, $nb {
+           define hrsum ($hrsum + ($prmean-pe[$i])*($prmean-pe[$i])*hr[$i])
+           define hrsumka ($hrsumka + hr[$i])
+           if ($hrsumka < 0.5*$hrsuma) {define prmedian (pe[$i])}
+         }
+         define prsigma (sqrt($hrsum/$hrsuma))
+         write standard mean sigma median $prmean $prsigma $prmedian
+        # ctype $5
+         ptype 20 3
+         expand 0.6
+       #  points xp he
+         ctype $6
+         histogram pe hr
+         ctype black
+
+mah 2
+         data $1
+         read rp 3
+         set dimen(hr) = 101
+         set dimen(pe) = 101
+         define dx (10/100)
+        # define dx (5/100)
+         define np (dimen(rp))
+         do i = 0, 100 {
+           set pe[$i] = 100 + $i*$dx
+        #   set pe[$i] = 69.5 + $i*$dx
+           set hr[$i] = 0
+         }
+         do i = 0, $np-1 {
+           do j = 0, 100 {
+             if (rp[$i] >= pe[$j]-0.5*$dx && rp[$i] < pe[$j]+0.5*$dx) {
+               set hr[$j] = hr[$j] + 1
+             }
+           }
+         }
+         define hrmax 0
+         do i = 0, 100 {
+           if (hr[$i] > $hrmax) {define hrmax (hr[$i])}
+         }
+         define hrsum 0
+         define hrsuma 0
+         do i = 0, 100 {
+           set hr[$i] = hr[$i]/$hrmax
+           define hrsum ($hrsum + pe[$i]*hr[$i])
+           define hrsuma ($hrsuma + hr[$i])
+         }
+         define hrmean ($hrsum/$hrsuma)
+         write standard mean $hrmean
+         ctype $2
+         ptype 20 3
+         expand 0.6
+       #  points xp he
+         ctype $2
+         histogram pe hr
+         ctype black
+
+hit 2
+         data $1
+         read ht 2
+         define htmin 100000
+         define htmax -100000
+         do i = 0, dimen(ht)-1 {
+           if (ht[$i] < $htmin) {define htmin (ht[$i])}
+           if (ht[$i] > $htmax) {define htmax (ht[$i])}
+         }
+         write standard Extrema $htmin $htmax
+         set dimen(hh) = 201
+         set dimen(vv) = 201
+         define dh (($htmax-$htmin)/200)
+         define nt (dimen(ht))
+         do i = 0, 200 {
+           set hh[$i] = $htmin + $i*$dh
+           set vv[$i] = 0
+         }
+         do i = 0, $nt-1 {
+           do j = 0, 200 {
+             if (ht[$i] >= hh[$j]-0.5*$dh && ht[$i] < hh[$j]+0.5*$dh) {
+               set vv[$j] = vv[$j] + 1
+             }
+           }
+         }
+         define vvmax 0
+         do i = 0, 200 {
+           if (vv[$i] > $vvmax) {define vvmax (vv[$i])}
+         }
+         write standard vvmax $vvmax
+         define vvsum 0
+         define vvsuma 0
+         do i = 0, 200 {
+           set vv[$i] = vv[$i]/$vvmax
+           define vvsum ($vvsum + vv[$i]*hh[$i])
+           define vvsuma ($vvsuma + vv[$i])
+         }
+         define vvmean ($vvsum/$vvsuma)
+         write standard mean $vvmean
+       #  set vvn = vv/$vvmax
+         ctype $2
+         ptype 20 3
+         expand 0.6
+       #  points xp he
+         ctype $2
+         histogram hh vv
+         ctype black
+
+hipe 2
+         data $1
+         read pe 8
+         set dimen(he) = 201
+         set dimen(xp) = 201
+         define dx (40/200)
+         define np (dimen(pe))
+         do i = 0, 200 {
+           set xp[$i] = -10 + $i*$dx
+           set he[$i] = 0
+         }
+         do i = 0, $np-1 {
+           do j = 0, 200 {
+             if (pe[$i] >= xp[$j]-0.5*$dx && pe[$i] < xp[$j]+0.5*$dx) {
+               set he[$j] = he[$j] + 1
+             }
+           }
+         }
+         define hemax 0
+         do i = 0, 200 {
+           if (he[$i] > $hemax) {define hemax (he[$i])}
+         }
+         define hesum 0
+         define hesuma 0
+         do i = 0, 200 {
+           set he[$i] = he[$i]/$hemax
+           define hesum ($hesum + xp[$i]*he[$i])
+           define hesuma ($hesuma + he[$i])
+         }
+         define hemean ($hesum/$hesuma)
+         write standard mean $hemean
+         ctype $2
+         ptype 20 3
+         expand 0.6
+       #  points xp he
+         ctype $2
+         histogram xp he
+         ctype black
+
+gau 3    set xg = 0, 20, 0.01
+         set yg = $3*exp(-(xg-$1)*(xg-$1)/(2*$2*$2))
+         ctype red
+         connect xg yg
+         ctype black
+
+rno 5    set xn = $1, $1+100, 0.1
+         set yn = $2*exp(-(xn-$3)*(xn-$3)/(2*$4*$4))
+         ctype $5
+         connect xn yn
+         ctype black
+
+       # Hybrid gaussian
+hga 6    set xg = $1, $1+100, 0.1
+         set hsig = 2*$4*$4 + (xg-$3)*$5
+         set yg = $2*exp(-(xg-$3)*(xg-$3)/hsig)
+         ctype $6
+         connect xg yg
+         ctype black
+
+       # Hybrid gaussian
+hgn 7    set xgn = $1, $7, 0.5
+         set hsig = 2*$4*$4 + (xgn-$3)*$5
+         set ygn = $2*exp(-(xgn-$3)*(xgn-$3)/hsig)
+         ctype $6
+         connect xgn ygn
+         ctype black
+
+       # Hybrid gaussian derivative
+hgd 6    set xg = $1, $1+100, 0.1
+         set hsig = 2*$4*$4 + (xg-$3)*$5
+         set denu = (xg-$3)*(xg-$3)*$5-2*(xg-$3)*hsig
+         set yg = $2*exp(-(xg-$3)*(xg-$3)/hsig)
+         set dg = 1.46*yg*denu/(hsig*hsig)
+         ctype $6
+         connect xg dg
+         ctype black
+
+fah 2    data $1
+         read {fax 1 fas 2}
+         set fat = fax
+         ctype $2
+         histogram fat fas
+         ctype black
+
+fahn 3    data $1
+         read {fax 1 fas 2}
+         set faz = fas*$3
+         ctype $2
+         histogram fax faz
+         ctype black
+
+trx  3   set xt = 100, 135, 0.1
+         set yt = $1*exp((xt-$2)/$3)
+         set lyt = lg(yt)
+         ctype forest
+         connect xt lyt
+         ctype black
+
+rdis 2
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+	 connect s p
+	 ctype black
+
+rdit 3
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+         set pt = p + $3
+	 connect s pt
+	 ctype black
+
+rdis2 2
+	 data $1
+	 ctype $2
+	 read {s 1 p 3}
+	 connect s p
+	 ctype black
+
+dedis 2
+	 data $1
+	 ctype $2
+	 read {s 1 p1 2 p2 3}
+         set dp = p1-p2
+	 connect s dp
+	 ctype black
+
+cdis 4
+	 data $1
+	 read {xcd 1 yc 2 yd 3 ye 4}
+         ctype $2
+	 connect xcd yc
+         ctype $3
+         connect xcd yd
+         ctype $4
+         connect xcd ye
+	 ctype black
+
+rdisn 3
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+         set pn = p*$3
+	 connect s pn
+	 ctype black
+
+rdin 4
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+         set pn = p*$3
+         set sn = s - $4
+	 connect sn pn
+	 ctype black
+
+ldis 2
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+         set lp = lg(p)
+	 connect s lp
+	 ctype black
+
+sdis 2
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+	 vecminmax p ppmin ppmax
+	 set pn = p/$ppmax
+	 connect s pn
+	 ctype black
+
+ddis 2
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+	 ptype 20 3
+	 expand 0.65
+	 points s p
+	 ctype black
+
+ddos 2
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+	 ptype 20 0
+	 expand 0.65
+	 points s p
+	 ctype black
+
+mdis 2
+	 data $1
+	 ctype $2
+	 read {s 1 p 2}
+	 set pp = p*p*p*p*p
+	 connect s pp
+	 ctype black
+
+
+bo 8   # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 18000 31000
+         angle 0
+         axis $1 $2 $3 $4 4000 18000 26000 1 2
+         axis $1 $2 $3 $4 4000 31000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 18000 13000 2 1
+         axis $5 $6 $7 $8 30000 18000 13000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+        # xlabel N,\lambda
+        # ylabel P(N,\lambda)
+      #   xlabel p.e.
+      #   ylabel P(p.e.)
+        # xlabel (t_{ADC}-t_{0})/t_{s}
+        # ylabel (A-<A>)/<A>
+	 
+bo1 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 23000 31000
+         angle 0
+         axis $1 $2 $3 $4 4000 23000 26000 1 2
+         axis $1 $2 $3 $4 4000 31000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 23000 8000 2 1
+         axis $5 $6 $7 $8 30000 23000 8000 0 0
+         angle 0
+         expand 0.9
+	# xlabel N_{deconvolved}
+         xlabel Phase
+         ylabel P
+	 
+bo2 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 13000 21000
+         angle 0
+         axis $1 $2 $3 $4 4000 13000 26000 1 2
+         axis $1 $2 $3 $4 4000 21000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 13000 8000 2 1
+         axis $5 $6 $7 $8 30000 13000 8000 0 0
+         angle 0
+         expand 0.9
+	 xlabel N_{shaped}
+         ylabel P
+	 
+bo3 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 3000 11000
+         angle 0
+         axis $1 $2 $3 $4 4000  3000 26000 1 2
+         axis $1 $2 $3 $4 4000 11000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 3000 8000 2 1
+         axis $5 $6 $7 $8 30000 3000 8000 0 0
+         angle 0
+         expand 0.9
+	 xlabel S_{deconvolved}
+         ylabel P
+	 
+bx1 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 23000 31000
+         angle 0
+         axis $1 $2 $3 $4 4000 23000 26000 0 2
+         axis $1 $2 $3 $4 4000 31000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 23000 8000 2 1
+         axis $5 $6 $7 $8 30000 23000 8000 0 0
+         angle 0
+         expand 0.9
+	# xlabel A_{shaped}
+        # ylabel P
+	 
+bx2 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 15000 23000
+         angle 0
+         axis $1 $2 $3 $4 4000 15000 26000 0 2
+         axis $1 $2 $3 $4 4000 23000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 15000 8000 2 1
+         axis $5 $6 $7 $8 30000 15000 8000 0 0
+         angle 0
+         expand 0.9
+	# xlabel A_{deconvolved}
+         ylabel ADC counts
+	 
+bx3 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 7000 15000
+         angle 0
+         axis $1 $2 $3 $4 4000  7000 26000 1 2
+         axis $1 $2 $3 $4 4000 15000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 7000 8000 2 1
+         axis $5 $6 $7 $8 30000 7000 8000 0 0
+         angle 0
+         expand 0.9
+	 xlabel Time [ns]
+        # ylabel P
+	 
+blo1 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 17000 23000 31000
+         angle 0
+         axis $1 $2 $3 $4 4000 23000 13000 1 2
+         axis $1 $2 $3 $4 4000 31000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 23000 8000 2 1
+         axis $5 $6 $7 $8 17000 23000 8000 0 0
+         angle 0
+         expand 0.9
+	 xlabel Phase
+         ylabel P(A-<A>)
+
+bro1 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 17000 30000 23000 31000
+         angle 0
+         axis $1 $2 $3 $4 17000 23000 13000 1 2
+         axis $1 $2 $3 $4 17000 31000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8 17000 23000 8000 0 1
+         axis $5 $6 $7 $8 30000 23000 8000 2 0
+         angle 0
+         expand 0.9
+	 xlabel Phase
+         #ylabel P
+
+blo2 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 17000 13000 21000
+         angle 0
+         axis $1 $2 $3 $4 4000 13000 13000 1 2
+         axis $1 $2 $3 $4 4000 21000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 13000 8000 2 1
+         axis $5 $6 $7 $8 17000 13000 8000 0 0
+         angle 0
+         expand 0.9
+	 xlabel A_{deconvolved}
+         ylabel P(A)
+
+bro2 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 17000 30000 13000 21000
+         angle 0
+         axis $1 $2 $3 $4 17000 13000 13000 1 2
+         axis $1 $2 $3 $4 17000 21000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8 17000 13000 8000 0 1
+         axis $5 $6 $7 $8 30000 13000 8000 2 0
+         angle 0
+         expand 0.9
+	 xlabel A_{shaped}
+         #ylabel P
+
+blo3 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 17000 3000 11000
+         angle 0
+         axis $1 $2 $3 $4 4000  3000 13000 1 2
+         axis $1 $2 $3 $4 4000 11000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 3000 8000 2 1
+         axis $5 $6 $7 $8 17000 3000 8000 0 0
+         angle 0
+         expand 0.9
+	 xlabel T_{deconvolved} [ns]
+         ylabel P(T)
+
+bro3 8  # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 17000 30000 3000 11000
+         angle 0
+         axis $1 $2 $3 $4 17000  3000 13000 1 2
+         axis $1 $2 $3 $4 17000 11000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8 17000 3000 8000 0 1
+         axis $5 $6 $7 $8 30000 3000 8000 2 0
+         angle 0
+         expand 0.9
+	 xlabel T_{shaped} [ns]
+         #ylabel P
+
+bd 8   # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 30000 3000 16000
+         angle 0
+         axis $1 $2 $3 $4 4000 3000 26000 1 2
+         axis $1 $2 $3 $4 4000 16000 26000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 3000 13000 2 1
+         axis $5 $6 $7 $8 30000 3000 13000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+
+bol1 8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 17000 24000 31000
+         angle 0
+         axis $1 $2 $3 $4 4000 24000 13000 0 2
+         axis $1 $2 $3 $4 4000 31000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 24000 7000 2 1
+         axis $5 $6 $7 $8 17000 24000 7000 0 1
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 
+bol2   8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 17000 17000 24000
+         angle 0
+         axis $1 $2 $3 $4 4000 17000 13000 0 0
+         axis $1 $2 $3 $4 4000 24000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 17000 7000 2 1
+         axis $5 $6 $7 $8 17000 17000 7000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 
+bol3 8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 17000 10000 17000
+         angle 0 
+         axis $1 $2 $3 $4 4000 10000 13000 0 0
+         axis $1 $2 $3 $4 4000 17000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 10000 7000 2 1
+         axis $5 $6 $7 $8 17000 10000 7000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 
+bol4 8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 4000 17000 3000 10000
+         angle 0 
+         axis $1 $2 $3 $4 4000  3000 13000 1 2
+         axis $1 $2 $3 $4 4000 10000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8  4000 3000 7000 2 1
+         axis $5 $6 $7 $8 17000 3000 7000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 
+bor1 8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 17000 30000 24000 31000
+         angle 0
+         axis $1 $2 $3 $4 17000 24000 13000 0 2
+         axis $1 $2 $3 $4 17000 31000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8 17000 24000 7000 0 0
+         axis $5 $6 $7 $8 30000 24000 7000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 
+bor2 8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 17000 30000 17000 24000
+         angle 0
+         axis $1 $2 $3 $4 17000 17000 13000 0 0
+         axis $1 $2 $3 $4 17000 24000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8 17000 17000 7000 0 1
+         axis $5 $6 $7 $8 30000 17000 7000 0 0
+         angle 0
+         expand 0.7
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 
+bor3 8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 17000 30000 10000 17000
+         angle 0
+         axis $1 $2 $3 $4 17000 10000 13000 0 0
+         axis $1 $2 $3 $4 17000 17000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8 17000 10000 7000 0 1
+         axis $5 $6 $7 $8 30000 10000 7000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 
+bor4 8 # Prepare box
+         ctype black
+         ltype 0
+         expand 0.7
+         limits $1 $2 $5 $6 
+	 location 17000 30000 3000 10000
+         angle 0
+         axis $1 $2 $3 $4 17000  3000 13000 1 2
+         axis $1 $2 $3 $4 17000 10000 13000 0 1
+         angle 90
+         axis $5 $6 $7 $8 17000 3000 7000 0 1
+         axis $5 $6 $7 $8 30000 3000 7000 0 0
+         angle 0
+         expand 0.9
+	# xlabel Energy [keV]
+        # ylabel Pixel counts/s
+	 

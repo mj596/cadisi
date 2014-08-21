@@ -1,0 +1,17 @@
+ Photons:          10   1.0493530      0.64348173       1.9756470    
+ Detector pulse integral and maximum:   80581.523       209.81372    
+ Amplifier pulse integral and maximum:   80566.086       197.31940    
+ Amplifier signal, arrival time:   920.45001    
+ FADC samples integral and maximum:   80492.000       195.00000    
+ Linear interpolation of FADC samples integral and maximum:   80216.656       195.21777    
+ Moving average of interpolated FADC samples integral and maximum:   80247.352       194.42123    
+ Derivative integral:   1360.8337    
+ Background level (deconvolved):   19.786654    
+ Deconvolved signal, amplitude:   226.04008       80218.328       80492.000       80581.523    
+ Deconvolved signal, arrival time:   912.64185       26.240826    
+ Deconvolved signal, number of photoelectrons:   18.161116    
+ Background level (shaped):   19.393339    
+ Shaped signal, amplitude:   208.59325       80296.805       80492.000       80581.523    
+ Shaped signal, arrival time:   913.92188       26.240826    
+ Shaped signal, number of photoelectrons:   17.403837    
+ FADC delay time and phase:   6.3019056       3.2868652       901.30188       903.30188       900.01501    
