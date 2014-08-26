@@ -59,11 +59,12 @@ cadisi
   fadc.dave - a derivative of averaged digitized signal
   fadc.daver - looks like a digitized signal derivative but vertically streched to match (something??)
   fadc.deco - 'deco' suggests deconvolution
-  fadc.shaped - well... shaped signal
+  fadc.shaped - well... shaped signal, possibly final signal to be verified with detector signal
   fadc.shapin - NO DATA
   flasim.test - NO DATA
   photon.bunches - ??
 
-
+* == ADC saturation ==
+** How is ADC saturation modelled? How does it look like when signal goes from unsaturated to saturated region? How sharp this transition is? What are other modifications to signal shape introduced by saturation?
 
 ----
