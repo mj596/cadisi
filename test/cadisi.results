@@ -1,17 +1,17 @@
- Photons:         953   3.6508985       1.5646714       7.4216919    
- Detector pulse integral and maximum:   1178613.5       10707.567    
- Amplifier pulse integral and maximum:   1178606.0       9749.1924    
- Amplifier signal, arrival time:   921.45001    
- FADC samples integral and maximum:   1178684.0       9739.0000    
- Linear interpolation of FADC samples integral and maximum:   1178473.3       9748.3838    
- Moving average of interpolated FADC samples integral and maximum:   1178496.4       9733.0137    
- Derivative integral:   20114.428    
- Background level (deconvolved):   55.164875    
- Deconvolved signal, amplitude:   11014.378       1178466.9       1178684.0       1178613.5    
- Deconvolved signal, arrival time:   909.98895       75.247528    
- Deconvolved signal, number of photoelectrons:   995.84668    
- Background level (shaped):   56.000805    
- Shaped signal, amplitude:   10450.021       1177752.9       1178684.0       1178613.5    
- Shaped signal, arrival time:   913.93896       75.247528    
- Shaped signal, number of photoelectrons:   902.23279    
- FADC delay time and phase:   4.6590004       1.6439819       899.65900       901.65900       900.01501    
+ Photons:          10   2.08751225       1.22668540       3.85736084    
+ Detector pulse integral and maximum:   114891.867       159.945892    
+ Amplifier pulse integral and maximum:   114944.523       150.487289    
+ Amplifier signal, arrival time:   921.150024    
+ FADC samples integral and maximum:   114824.000       146.000000    
+ Linear interpolation of FADC samples integral and maximum:   114496.055       146.012817    
+ Moving average of interpolated FADC samples integral and maximum:   114536.312       145.681610    
+ Derivative integral:   1223.31812    
+ Background level (deconvolved):   56.7789383    
+ Deconvolved signal, amplitude:   166.820114       114495.891       114824.000       114891.867    
+ Deconvolved signal, arrival time:   910.378723       46.9982605    
+ Deconvolved signal, number of photoelectrons:   10.5859241    
+ Background level (shaped):   57.6506691    
+ Shaped signal, amplitude:   155.029678       114583.164       114824.000       114891.867    
+ Shaped signal, arrival time:   912.558716       46.9982605    
+ Shaped signal, number of photoelectrons:   9.96461296    
+ FADC delay time and phase:   5.39873266       2.38372803       900.398743       902.398743       900.015015    

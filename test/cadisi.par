@@ -1,4 +1,4 @@
-1000         ncer: Cherenkov photon number (p.e.)
+10         ncer: Cherenkov photon number (p.e.)
 1            ipor: Poisson randomization of mean Cherenkov photon number
 900.0        time0: Mean arrival time of Cherenkov photons (ns)
 1            itim : Flag for ramdomization of arrival time of Cherenkov photons

@@ -1,4 +1,4 @@
-2         ncer: Cherenkov photon number (p.e.)
+1         ncer: Cherenkov photon number (p.e.)
 1            ipor: Poisson randomization of mean Cherenkov photon number
 900.0        time0: Mean arrival time of Cherenkov photons (ns)
 1            itim : Flag for ramdomization of arrival time of Cherenkov photons
@@ -26,7 +26,7 @@
 850.0        bo1
 1400.0       bi2
 1900.0       bo2
-0            ipr: Printing flag
+1            ipr: Printing flag
 57.354       pedelevel: Mean pedestal level computed from other run, the same for deconvolved and shaped signal
 1.5          fanoise: FADC noise
 0.04         pevar: pedestal variations (e.g. temperature)
